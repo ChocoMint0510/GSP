@@ -15,3 +15,18 @@ E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\GUI\obj\Debug\GUI.csproj.Up2Date
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\GUI\obj\Debug\GUI.exe
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\GUI\obj\Debug\GUI.pdb
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\GUI\obj\Debug\GUI.DangNhap.resources
+C:\GSP\GUI\GUI\bin\Debug\GUI.exe.config
+C:\GSP\GUI\GUI\obj\Debug\GUI.exe
+C:\GSP\GUI\GUI\obj\Debug\GUI.pdb
+C:\GSP\GUI\GUI\bin\Debug\GUI.exe
+C:\GSP\GUI\GUI\bin\Debug\GUI.pdb
+C:\GSP\GUI\GUI\bin\Debug\BLL.dll
+C:\GSP\GUI\GUI\bin\Debug\DAL.dll
+C:\GSP\GUI\GUI\bin\Debug\DTO.dll
+C:\GSP\GUI\GUI\bin\Debug\BLL.pdb
+C:\GSP\GUI\GUI\bin\Debug\DAL.pdb
+C:\GSP\GUI\GUI\bin\Debug\DTO.pdb
+C:\GSP\GUI\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\GSP\GUI\GUI\obj\Debug\GUI.DangNhap.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache

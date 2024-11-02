@@ -7,3 +7,6 @@ E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\DAL\obj\Debug\DAL.csproj.CoreCompil
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\DAL\obj\Debug\DAL.csproj.Up2Date
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\DAL\obj\Debug\DAL.dll
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\DAL\obj\Debug\DAL.pdb
+C:\GSP\GUI\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\GSP\GUI\DAL\obj\Debug\DAL.dll
+C:\GSP\GUI\DAL\obj\Debug\DAL.pdb

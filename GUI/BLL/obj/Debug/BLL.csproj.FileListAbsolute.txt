@@ -9,3 +9,12 @@ E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\BLL\obj\Debug\BLL.csproj.CoreCompil
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\BLL\obj\Debug\BLL.csproj.Up2Date
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\BLL\obj\Debug\BLL.dll
 E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\BLL\obj\Debug\BLL.pdb
+C:\GSP\GUI\BLL\bin\Debug\BLL.dll
+C:\GSP\GUI\BLL\bin\Debug\BLL.pdb
+C:\GSP\GUI\BLL\bin\Debug\DAL.dll
+C:\GSP\GUI\BLL\bin\Debug\DTO.dll
+C:\GSP\GUI\BLL\bin\Debug\DAL.pdb
+C:\GSP\GUI\BLL\bin\Debug\DTO.pdb
+C:\GSP\GUI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\GSP\GUI\BLL\obj\Debug\BLL.dll
+C:\GSP\GUI\BLL\obj\Debug\BLL.pdb
