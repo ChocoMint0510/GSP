@@ -1,37 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\",
+  "WorkspaceRootPath": "E:\\PUSH\\GSP\\GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\hk1-nam4\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\app\\gui\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\gui\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|E:\\PUSH\\GSP\\GUI\\dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|solutionrelative:dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|E:\\PUSH\\GSP\\GUI\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|E:\\PUSH\\GSP\\GUI\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|solutionrelative:bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -45,15 +49,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DangNhap.cs",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\DangNhap.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\DangNhap.cs",
               "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\DangNhap.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\DangNhap.cs",
               "RelativeToolTip": "GUI\\DangNhap.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -62,16 +66,28 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\Form1.cs [Design]",
+              "RelativeToolTip": "GUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T14:58:04.918Z",
+              "EditorCaption": " [Design]"
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserBLL.cs",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\BLL\\UserBLL.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\BLL\\UserBLL.cs",
               "RelativeDocumentMoniker": "BLL\\UserBLL.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\BLL\\UserBLL.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\BLL\\UserBLL.cs",
               "RelativeToolTip": "BLL\\UserBLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -79,11 +95,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "App.config",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\App.config",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\App.config",
               "RelativeDocumentMoniker": "GUI\\App.config",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\App.config",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\App.config",
               "RelativeToolTip": "GUI\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -92,22 +108,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cs [Design]",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\Main.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\Main.cs",
               "RelativeDocumentMoniker": "GUI\\Main.cs",
               "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\Main.cs [Design]",
-              "RelativeToolTip": "GUI\\Main.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T04:57:54.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserDAL.cs",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\DAL\\UserDAL.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\DAL\\UserDAL.cs",
               "RelativeDocumentMoniker": "DAL\\UserDAL.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\DAL\\UserDAL.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\DAL\\UserDAL.cs",
               "RelativeToolTip": "DAL\\UserDAL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserDTO.cs",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\DTO\\UserDTO.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\DTO\\UserDTO.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\DTO\\UserDTO.cs",
               "RelativeToolTip": "DTO\\UserDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -127,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\Program.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\Program.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\Program.cs",
               "RelativeToolTip": "GUI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,22 +155,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GUI",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\GUI.csproj",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\GUI.csproj",
               "RelativeDocumentMoniker": "GUI\\GUI.csproj",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\GUI.csproj",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\GUI.csproj",
               "RelativeToolTip": "GUI\\GUI.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-23T04:43:34.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\DangNhap.cs",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\DangNhap.cs",
               "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "E:\\HK1-Nam4\\\u0110\u1ED3 \u00C1n Chuy\u00EAn Ng\u00E0nh\\APP\\GUI\\GUI\\DangNhap.cs [Design]",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\DangNhap.cs [Design]",
               "RelativeToolTip": "GUI\\DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T04:40:10.342Z",
