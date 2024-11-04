@@ -9,3 +9,9 @@ C:\GSP\GUI\DTO\bin\Debug\DTO.pdb
 C:\GSP\GUI\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 C:\GSP\GUI\DTO\obj\Debug\DTO.dll
 C:\GSP\GUI\DTO\obj\Debug\DTO.pdb
+E:\PUSH\GSP\GUI\DTO\bin\Debug\DTO.dll
+E:\PUSH\GSP\GUI\DTO\bin\Debug\DTO.pdb
+E:\PUSH\GSP\GUI\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\PUSH\GSP\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\PUSH\GSP\GUI\DTO\obj\Debug\DTO.dll
+E:\PUSH\GSP\GUI\DTO\obj\Debug\DTO.pdb

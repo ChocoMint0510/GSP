@@ -52,6 +52,18 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMucThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMucThuoc.Designer.cs">
+      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +90,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quanlynguyenlieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlynguyenlieu.Designer.cs">
+      <DependentUpon>Quanlynguyenlieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlythuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlythuoc.Designer.cs">
+      <DependentUpon>Quanlythuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriNguoiDung.Designer.cs">
+      <DependentUpon>QuanTriNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaoLuuPhucHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaoLuuPhucHoi.Designer.cs">
+      <DependentUpon>SaoLuuPhucHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theodoitonkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theodoitonkho.Designer.cs">
+      <DependentUpon>Theodoitonkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongkeBaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongkeBaocao.Designer.cs">
+      <DependentUpon>ThongkeBaocao.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucThuoc.resx">
+      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KiemKeDoiChieu.resx">
       <DependentUpon>KiemKeDoiChieu.cs</DependentUpon>
@@ -96,6 +150,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quanlynguyenlieu.resx">
+      <DependentUpon>Quanlynguyenlieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlythuoc.resx">
+      <DependentUpon>Quanlythuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriNguoiDung.resx">
+      <DependentUpon>QuanTriNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaoLuuPhucHoi.resx">
+      <DependentUpon>SaoLuuPhucHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theodoitonkho.resx">
+      <DependentUpon>Theodoitonkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongkeBaocao.resx">
+      <DependentUpon>ThongkeBaocao.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

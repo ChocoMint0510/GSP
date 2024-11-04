@@ -10,3 +10,12 @@ E:\HK1-Nam4\Đồ Án Chuyên Ngành\APP\GUI\DAL\obj\Debug\DAL.pdb
 C:\GSP\GUI\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\GSP\GUI\DAL\obj\Debug\DAL.dll
 C:\GSP\GUI\DAL\obj\Debug\DAL.pdb
+E:\PUSH\GSP\GUI\DAL\bin\Debug\DAL.dll
+E:\PUSH\GSP\GUI\DAL\bin\Debug\DAL.pdb
+E:\PUSH\GSP\GUI\DAL\bin\Debug\DTO.dll
+E:\PUSH\GSP\GUI\DAL\bin\Debug\DTO.pdb
+E:\PUSH\GSP\GUI\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\PUSH\GSP\GUI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\PUSH\GSP\GUI\DAL\obj\Debug\DAL.csproj.Up2Date
+E:\PUSH\GSP\GUI\DAL\obj\Debug\DAL.dll
+E:\PUSH\GSP\GUI\DAL\obj\Debug\DAL.pdb
