@@ -6,7 +6,8 @@ namespace DAL // Thêm namespace cho lớp DAL
 {
     public class UserDAL
     {
-        public string connectionString = "Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True";
+        public string connectionString = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
+
 
         // Hàm kiểm tra xem nhân viên có tồn tại dựa trên Username
         public UserDTO GetUserByUsername(string username)
@@ -55,7 +56,7 @@ namespace DAL // Thêm namespace cho lớp DAL
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                conn.Open();
+                conn.Open();    
                 string query = $"CREATE LOGIN {username} WITH PASSWORD = '{password}';";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int result = cmd.ExecuteNonQuery();

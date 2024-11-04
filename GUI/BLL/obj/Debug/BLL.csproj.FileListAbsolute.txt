@@ -15,7 +15,6 @@ C:\GSP\GUI\BLL\bin\Debug\DAL.dll
 C:\GSP\GUI\BLL\bin\Debug\DTO.dll
 C:\GSP\GUI\BLL\bin\Debug\DAL.pdb
 C:\GSP\GUI\BLL\bin\Debug\DTO.pdb
-C:\GSP\GUI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\GSP\GUI\BLL\obj\Debug\BLL.dll
 C:\GSP\GUI\BLL\obj\Debug\BLL.pdb
 E:\PUSH\GSP\GUI\BLL\bin\Debug\BLL.dll
@@ -29,3 +28,6 @@ E:\PUSH\GSP\GUI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 E:\PUSH\GSP\GUI\BLL\obj\Debug\BLL.csproj.Up2Date
 E:\PUSH\GSP\GUI\BLL\obj\Debug\BLL.dll
 E:\PUSH\GSP\GUI\BLL\obj\Debug\BLL.pdb
+C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.CopyComplete
