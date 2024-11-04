@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietNhapKho.Designer.cs">
+      <DependentUpon>ChiTietNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietXuatKho.Designer.cs">
+      <DependentUpon>ChiTietXuatKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +141,18 @@
     <Compile Include="ThongkeBaocao.Designer.cs">
       <DependentUpon>ThongkeBaocao.cs</DependentUpon>
     </Compile>
+    <Compile Include="XuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatKho.Designer.cs">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietNhapKho.resx">
+      <DependentUpon>ChiTietNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietXuatKho.resx">
+      <DependentUpon>ChiTietXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KiemKeDoiChieu.resx">
       <DependentUpon>KiemKeDoiChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapKho.resx">
       <DependentUpon>NhapKho.cs</DependentUpon>
@@ -167,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongkeBaocao.resx">
       <DependentUpon>ThongkeBaocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatKho.resx">
+      <DependentUpon>XuatKho.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
