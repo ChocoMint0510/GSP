@@ -10,7 +10,7 @@ namespace DAL
 {
     internal class DataConnect
     {
-        private string strConn = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
+        private string strConn = "Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True";
         private SqlCommand cmd = null;
         private SqlConnection conn = null;
         private SqlDataReader reader = null;

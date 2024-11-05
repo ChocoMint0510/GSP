@@ -1,12 +1,14 @@
 ﻿// DAL/UserDAL.cs
 using DTO;
+using System.Data;
+using System;
 using System.Data.SqlClient;
 
 namespace DAL // Thêm namespace cho lớp DAL
 {
     public class UserDAL
     {
-        public string connectionString = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
+        public string connectionString = "Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True";
 
 
         // Hàm kiểm tra xem nhân viên có tồn tại dựa trên Username
@@ -76,5 +78,38 @@ namespace DAL // Thêm namespace cho lớp DAL
                 return result > 0;
             }
         }
+        // Thêm phương thức này vào UserDAL.cs
+        public int AddUserWithProcedure(UserDTO user, string password, string idQuyen)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("sp_AddNhanVien", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@TenNhanVien", user.TenNhanVien);
+                cmd.Parameters.AddWithValue("@IDChucVu", user.ChucVuID);
+                cmd.Parameters.AddWithValue("@IDQuyen", idQuyen);
+                cmd.Parameters.AddWithValue("@Username", user.Username);
+                cmd.Parameters.AddWithValue("@Password", password);
+
+                SqlParameter returnParameter = cmd.Parameters.Add("ReturnValue", SqlDbType.Int);
+                returnParameter.Direction = ParameterDirection.ReturnValue;
+
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    return (int)returnParameter.Value;
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine("Lỗi khi thêm người dùng: " + ex.Message);
+                    return -2; // Một mã lỗi khác cho các lỗi SQL khác
+                }
+            }
+        }
+
+
+
     }
 }

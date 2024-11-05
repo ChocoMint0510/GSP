@@ -73,3 +73,8 @@ C:\GSP\GUI\GUI\obj\Debug\GUI.ThongkeBaocao.resources
 C:\GSP\GUI\GUI\obj\Debug\GUI.XuatKho.resources
 C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.CopyComplete
+E:\PUSH\GSP\GUI\GUI\obj\Debug\GUI.ChiTietNhapKho.resources
+E:\PUSH\GSP\GUI\GUI\obj\Debug\GUI.ChiTietXuatKho.resources
+E:\PUSH\GSP\GUI\GUI\obj\Debug\GUI.Main.resources
+E:\PUSH\GSP\GUI\GUI\obj\Debug\GUI.XuatKho.resources
+E:\PUSH\GSP\GUI\GUI\obj\Debug\GUI.ThemNguoiDung.resources
