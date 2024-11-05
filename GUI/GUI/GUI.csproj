@@ -84,10 +84,6 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kho.cs" />
-    <Compile Include="Kho.Designer.cs">
-      <DependentUpon>Kho.cs</DependentUpon>
-    </Compile>
     <Compile Include="KiemKeDoiChieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kho.resx">
-      <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KiemKeDoiChieu.resx">
       <DependentUpon>KiemKeDoiChieu.cs</DependentUpon>
