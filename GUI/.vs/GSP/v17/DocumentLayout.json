@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\PUSH\\GSP\\GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\xtraform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\xtraform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "QuanTriNguoiDung.cs [Design]",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\QuanTriNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\QuanTriNguoiDung.cs",
@@ -58,12 +62,11 @@
               "RelativeToolTip": "GUI\\QuanTriNguoiDung.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T23:55:12.154Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ThemNguoiDung.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\ThemNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\ThemNguoiDung.cs",
@@ -77,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ThemNguoiDung.cs [Design]",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\ThemNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\ThemNguoiDung.cs",
@@ -90,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserBLL.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\BLL\\UserBLL.cs",
               "RelativeDocumentMoniker": "BLL\\UserBLL.cs",
@@ -99,12 +102,11 @@
               "ViewState": "AQIAAEoAAAAAAAAAAAAwwA4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:40:04.378Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserDAL.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\DAL\\UserDAL.cs",
               "RelativeDocumentMoniker": "DAL\\UserDAL.cs",
@@ -113,12 +115,11 @@
               "ViewState": "AQIAAFEAAAAAAAAAAADwv2wAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:40:57.975Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
@@ -127,8 +128,19 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T06:41:33.773Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "XtraForm1.cs [Design]",
+              "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\XtraForm1.cs",
+              "RelativeDocumentMoniker": "GUI\\XtraForm1.cs",
+              "ToolTip": "E:\\PUSH\\GSP\\GUI\\GUI\\XtraForm1.cs [Design]",
+              "RelativeToolTip": "GUI\\XtraForm1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:30:05.437Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -140,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "QuanTriNguoiDung.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\QuanTriNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\QuanTriNguoiDung.cs",
@@ -148,12 +160,11 @@
               "RelativeToolTip": "GUI\\QuanTriNguoiDung.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAmwFMAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T09:37:25.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T09:37:25.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
@@ -161,12 +172,11 @@
               "RelativeToolTip": "GUI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:23:44.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T08:23:44.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ThemNguoiDung.Designer.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\ThemNguoiDung.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\ThemNguoiDung.Designer.cs",
@@ -174,8 +184,7 @@
               "RelativeToolTip": "GUI\\ThemNguoiDung.Designer.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAD4v0QAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:05:58.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T08:05:58.418Z"
             }
           ]
         }
