@@ -35,14 +35,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_IDPM = new System.Windows.Forms.TextBox();
+            this.txt_GiaTriDH = new System.Windows.Forms.TextBox();
+            this.cb_NguoiNhap = new System.Windows.Forms.ComboBox();
+            this.cb_Khuvuc = new System.Windows.Forms.ComboBox();
+            this.dt_NgayNhap = new System.Windows.Forms.DateTimePicker();
+            this.btn_Them = new System.Windows.Forms.Button();
+            this.btn_CapNhat = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_TinhTrang = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(386, 69);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -113,60 +115,61 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Giá trị đơn hàng:";
             // 
-            // textBox1
+            // txt_IDPM
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 8;
+            this.txt_IDPM.Location = new System.Drawing.Point(143, 81);
+            this.txt_IDPM.Name = "txt_IDPM";
+            this.txt_IDPM.Size = new System.Drawing.Size(200, 20);
+            this.txt_IDPM.TabIndex = 8;
             // 
-            // textBox2
+            // txt_GiaTriDH
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 239);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 9;
+            this.txt_GiaTriDH.Location = new System.Drawing.Point(143, 239);
+            this.txt_GiaTriDH.Name = "txt_GiaTriDH";
+            this.txt_GiaTriDH.Size = new System.Drawing.Size(200, 20);
+            this.txt_GiaTriDH.TabIndex = 9;
             // 
-            // comboBox1
+            // cb_NguoiNhap
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 198);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cb_NguoiNhap.FormattingEnabled = true;
+            this.cb_NguoiNhap.Location = new System.Drawing.Point(143, 198);
+            this.cb_NguoiNhap.Name = "cb_NguoiNhap";
+            this.cb_NguoiNhap.Size = new System.Drawing.Size(200, 21);
+            this.cb_NguoiNhap.TabIndex = 10;
             // 
-            // comboBox2
+            // cb_Khuvuc
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(143, 159);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 21);
-            this.comboBox2.TabIndex = 11;
+            this.cb_Khuvuc.FormattingEnabled = true;
+            this.cb_Khuvuc.Location = new System.Drawing.Point(143, 159);
+            this.cb_Khuvuc.Name = "cb_Khuvuc";
+            this.cb_Khuvuc.Size = new System.Drawing.Size(200, 21);
+            this.cb_Khuvuc.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dt_NgayNhap
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(143, 122);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dt_NgayNhap.Location = new System.Drawing.Point(143, 122);
+            this.dt_NgayNhap.Name = "dt_NgayNhap";
+            this.dt_NgayNhap.Size = new System.Drawing.Size(200, 20);
+            this.dt_NgayNhap.TabIndex = 12;
             // 
-            // button1
+            // btn_Them
             // 
-            this.button1.Location = new System.Drawing.Point(26, 331);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 30);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Them.Location = new System.Drawing.Point(26, 331);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(84, 30);
+            this.btn_Them.TabIndex = 13;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // button2
+            // btn_CapNhat
             // 
-            this.button2.Location = new System.Drawing.Point(153, 331);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 30);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Cập nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_CapNhat.Location = new System.Drawing.Point(153, 331);
+            this.btn_CapNhat.Name = "btn_CapNhat";
+            this.btn_CapNhat.Size = new System.Drawing.Size(84, 30);
+            this.btn_CapNhat.TabIndex = 14;
+            this.btn_CapNhat.Text = "Cập nhật";
+            this.btn_CapNhat.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -177,19 +180,37 @@
             this.button3.Text = "Chi tiết nhập kho";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(23, 281);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Tình trạng:";
+            // 
+            // txt_TinhTrang
+            // 
+            this.txt_TinhTrang.Location = new System.Drawing.Point(143, 274);
+            this.txt_TinhTrang.Name = "txt_TinhTrang";
+            this.txt_TinhTrang.Size = new System.Drawing.Size(200, 20);
+            this.txt_TinhTrang.TabIndex = 17;
+            // 
             // NhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 429);
+            this.Controls.Add(this.txt_TinhTrang);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_CapNhat);
+            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.dt_NgayNhap);
+            this.Controls.Add(this.cb_Khuvuc);
+            this.Controls.Add(this.cb_NguoiNhap);
+            this.Controls.Add(this.txt_GiaTriDH);
+            this.Controls.Add(this.txt_IDPM);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -197,7 +218,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NhapKho";
             this.Text = "NhapKho";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -215,13 +236,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_IDPM;
+        private System.Windows.Forms.TextBox txt_GiaTriDH;
+        private System.Windows.Forms.ComboBox cb_NguoiNhap;
+        private System.Windows.Forms.ComboBox cb_Khuvuc;
+        private System.Windows.Forms.DateTimePicker dt_NgayNhap;
+        private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_TinhTrang;
     }
 }

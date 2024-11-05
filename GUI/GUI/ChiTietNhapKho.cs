@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,13 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ChiTietNhapKho : Form
+    public partial class ChiTietNhapKho : DevExpress.XtraEditors.XtraForm
     {
         public ChiTietNhapKho()
         {
             InitializeComponent();
         }
+
+        
     }
 }
