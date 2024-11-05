@@ -79,7 +79,7 @@ namespace DAL // Thêm namespace cho lớp DAL
             }
         }
         // Thêm phương thức này vào UserDAL.cs
-        public int AddUserWithProcedure(UserDTO user, string password, string idQuyen)
+        public int AddUserWithProcedure(UserDTO user, string password)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -88,7 +88,6 @@ namespace DAL // Thêm namespace cho lớp DAL
 
                 cmd.Parameters.AddWithValue("@TenNhanVien", user.TenNhanVien);
                 cmd.Parameters.AddWithValue("@IDChucVu", user.ChucVuID);
-                cmd.Parameters.AddWithValue("@IDQuyen", idQuyen);
                 cmd.Parameters.AddWithValue("@Username", user.Username);
                 cmd.Parameters.AddWithValue("@Password", password);
 
@@ -108,6 +107,7 @@ namespace DAL // Thêm namespace cho lớp DAL
                 }
             }
         }
+
 
 
 

@@ -21,7 +21,6 @@ namespace GUI
             txt_UserName.ReadOnly = true;
             txt_HoTen.ReadOnly = true;
             txt_ChucVu.ReadOnly = true;
-            txt_Quyen.ReadOnly = true;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -57,22 +56,14 @@ namespace GUI
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Xử lý ghép chuỗi các quyền duy nhất cho mỗi nhân viên
+                // Xử lý dữ liệu mà không cần ghép chuỗi quyền
                 var groupedData = dt.AsEnumerable()
-                    .GroupBy(row => new
+                    .Select(row => new
                     {
                         MaNhanVien = row["MaNhanVien"],
                         Username = row["Username"],
                         HoVaTen = row["HoVaTen"],
                         ChucVu = row["ChucVu"]
-                    })
-                    .Select(g => new
-                    {
-                        MaNhanVien = g.Key.MaNhanVien,
-                        Username = g.Key.Username,
-                        HoVaTen = g.Key.HoVaTen,
-                        ChucVu = g.Key.ChucVu,
-                        Quyen = string.Join(", ", g.Select(row => row["Quyen"].ToString()).Distinct())
                     })
                     .ToList();
 
@@ -82,16 +73,16 @@ namespace GUI
                 resultTable.Columns.Add("Username");
                 resultTable.Columns.Add("HoVaTen");
                 resultTable.Columns.Add("ChucVu");
-                resultTable.Columns.Add("Quyen");
 
                 foreach (var item in groupedData)
                 {
-                    resultTable.Rows.Add(item.MaNhanVien, item.Username, item.HoVaTen, item.ChucVu, item.Quyen);
+                    resultTable.Rows.Add(item.MaNhanVien, item.Username, item.HoVaTen, item.ChucVu);
                 }
 
                 dgv_DanhSach.DataSource = resultTable;
             }
         }
+
 
         private void dgv_DanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -103,13 +94,11 @@ namespace GUI
                 txt_UserName.Text = row.Cells["Username"].Value.ToString();
                 txt_HoTen.Text = row.Cells["HoVaTen"].Value.ToString();
                 txt_ChucVu.Text = row.Cells["ChucVu"].Value.ToString();
-                txt_Quyen.Text = row.Cells["Quyen"].Value.ToString();
 
                 txt_MaNV.ReadOnly = true;
                 txt_UserName.ReadOnly = true;
                 txt_HoTen.ReadOnly = true;
                 txt_ChucVu.ReadOnly = true;
-                txt_Quyen.ReadOnly = true;
             }
         }
     }

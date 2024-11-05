@@ -23,7 +23,6 @@ namespace GUI
         {
             string tenNhanVien = txt_addTen.Text;
             string chucVu = cb_addchucvu.SelectedValue.ToString();
-            string quyen = cb_addQuyen.SelectedValue.ToString();
             string username = txt_addTenTK.Text;
             string password = txt_addMatKhau.Text;
             string confirmPassword = txt_XacNhanMatKhau.Text;
@@ -47,7 +46,7 @@ namespace GUI
             try
             {
                 // Thêm nhân viên mới
-                bool success = userBLL.AddUser(tenNhanVien, chucVu, quyen, username, password, confirmPassword);
+                bool success = userBLL.AddUser(tenNhanVien, chucVu, username, password, confirmPassword);
                 if (success)
                 {
                     MessageBox.Show("Thêm người dùng thành công.");
@@ -83,16 +82,9 @@ namespace GUI
                 cb_addchucvu.DataSource = dtChucVu;
                 cb_addchucvu.DisplayMember = "TenChucVu";
                 cb_addchucvu.ValueMember = "IDChucVu";
-
-                // Load dữ liệu vào cb_addQuyen
-                SqlDataAdapter daQuyen = new SqlDataAdapter("SELECT IDQuyen, TenQuyen FROM Quyen", conn);
-                DataTable dtQuyen = new DataTable();
-                daQuyen.Fill(dtQuyen);
-                cb_addQuyen.DataSource = dtQuyen;
-                cb_addQuyen.DisplayMember = "TenQuyen";
-                cb_addQuyen.ValueMember = "IDQuyen";
             }
         }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

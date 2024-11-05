@@ -35,14 +35,13 @@ namespace BLL
                 return false; // Login thất bại
             }
         }
-        public bool AddUser(string tenNhanVien, string chucVuID, string quyenID, string username, string password, string confirmPassword)
+        public bool AddUser(string tenNhanVien, string chucVuID, string username, string password, string confirmPassword)
         {
             if (password != confirmPassword)
             {
                 throw new ArgumentException("Mật khẩu và xác nhận mật khẩu không khớp.");
             }
 
-            // Tạo đối tượng UserDTO
             UserDTO newUser = new UserDTO
             {
                 MaNhanVienID = "", // Giá trị này sẽ được sinh tự động trong stored procedure
@@ -51,10 +50,8 @@ namespace BLL
                 Username = username
             };
 
-            // Gọi phương thức trong UserDAL để thêm nhân viên
-            int result = userDAL.AddUserWithProcedure(newUser, password, quyenID);
+            int result = userDAL.AddUserWithProcedure(newUser, password);
 
-            // Kiểm tra kết quả trả về từ stored procedure
             if (result == -1)
             {
                 throw new InvalidOperationException("Tên login đã tồn tại. Vui lòng chọn tên khác.");
@@ -62,7 +59,8 @@ namespace BLL
 
             return true;
         }
-        
+
+
 
         // Phương thức kiểm tra trùng lặp Username hoặc Login
         public bool CheckDuplicateUsernameOrLogin(string username)

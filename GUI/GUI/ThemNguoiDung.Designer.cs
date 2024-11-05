@@ -34,9 +34,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txt_addMatKhau = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cb_addQuyen = new System.Windows.Forms.ComboBox();
             this.cb_addchucvu = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_addTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,9 +51,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txt_addMatKhau);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.cb_addQuyen);
             this.panel1.Controls.Add(this.cb_addchucvu);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txt_addTen);
             this.panel1.Controls.Add(this.label3);
@@ -71,7 +67,7 @@
             // btn_addNguoiDung
             // 
             this.btn_addNguoiDung.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addNguoiDung.Location = new System.Drawing.Point(157, 405);
+            this.btn_addNguoiDung.Location = new System.Drawing.Point(151, 354);
             this.btn_addNguoiDung.Name = "btn_addNguoiDung";
             this.btn_addNguoiDung.Size = new System.Drawing.Size(112, 72);
             this.btn_addNguoiDung.TabIndex = 15;
@@ -81,7 +77,7 @@
             // 
             // txt_XacNhanMatKhau
             // 
-            this.txt_XacNhanMatKhau.Location = new System.Drawing.Point(179, 318);
+            this.txt_XacNhanMatKhau.Location = new System.Drawing.Point(179, 272);
             this.txt_XacNhanMatKhau.Name = "txt_XacNhanMatKhau";
             this.txt_XacNhanMatKhau.Size = new System.Drawing.Size(222, 20);
             this.txt_XacNhanMatKhau.TabIndex = 14;
@@ -90,7 +86,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(31, 320);
+            this.label7.Location = new System.Drawing.Point(31, 274);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 17);
             this.label7.TabIndex = 13;
@@ -98,7 +94,7 @@
             // 
             // txt_addMatKhau
             // 
-            this.txt_addMatKhau.Location = new System.Drawing.Point(179, 277);
+            this.txt_addMatKhau.Location = new System.Drawing.Point(179, 231);
             this.txt_addMatKhau.Name = "txt_addMatKhau";
             this.txt_addMatKhau.Size = new System.Drawing.Size(222, 20);
             this.txt_addMatKhau.TabIndex = 12;
@@ -107,20 +103,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 279);
+            this.label6.Location = new System.Drawing.Point(31, 233);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Mật Khẩu:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // cb_addQuyen
-            // 
-            this.cb_addQuyen.FormattingEnabled = true;
-            this.cb_addQuyen.Location = new System.Drawing.Point(179, 197);
-            this.cb_addQuyen.Name = "cb_addQuyen";
-            this.cb_addQuyen.Size = new System.Drawing.Size(222, 21);
-            this.cb_addQuyen.TabIndex = 10;
             // 
             // cb_addchucvu
             // 
@@ -129,16 +117,6 @@
             this.cb_addchucvu.Name = "cb_addchucvu";
             this.cb_addchucvu.Size = new System.Drawing.Size(222, 21);
             this.cb_addchucvu.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 199);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Quyền:";
             // 
             // label4
             // 
@@ -169,7 +147,7 @@
             // 
             // txt_addTenTK
             // 
-            this.txt_addTenTK.Location = new System.Drawing.Point(179, 237);
+            this.txt_addTenTK.Location = new System.Drawing.Point(179, 191);
             this.txt_addTenTK.Name = "txt_addTenTK";
             this.txt_addTenTK.Size = new System.Drawing.Size(222, 20);
             this.txt_addTenTK.TabIndex = 4;
@@ -178,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 239);
+            this.label2.Location = new System.Drawing.Point(31, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 17);
             this.label2.TabIndex = 3;
@@ -220,9 +198,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_addMatKhau;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cb_addQuyen;
         private System.Windows.Forms.ComboBox cb_addchucvu;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_addNguoiDung;
         private System.Windows.Forms.TextBox txt_XacNhanMatKhau;
