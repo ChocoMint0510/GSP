@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "E:\\PUSH\\GSP\\GUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\quantringuoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\quantringuoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\quantringuoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,23 +19,23 @@
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\quantringuoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|e:\\push\\gsp\\gui\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|E:\\PUSH\\GSP\\GUI\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A4B2F65-BD3F-4648-B95A-A0043F256D76}|BLL\\BLL.csproj|solutionrelative:bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|e:\\push\\gsp\\gui\\dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|E:\\PUSH\\GSP\\GUI\\dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA0A9C9-0821-4C47-9605-3C063AFD73E3}|DAL\\DAL.csproj|solutionrelative:dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|e:\\push\\gsp\\gui\\gui\\themnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|E:\\PUSH\\GSP\\GUI\\gui\\themnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27441BAD-26EC-4C39-8E16-99EF6D14648F}|GUI\\GUI.csproj|solutionrelative:gui\\themnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|e:\\push\\gsp\\gui\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|E:\\PUSH\\GSP\\GUI\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AF2B671-4CCC-4066-8C8D-1C736E4A4786}|DTO\\DTO.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ThemNguoiDung.cs",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\ThemNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\ThemNguoiDung.cs",
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ThemNguoiDung.cs [Design]",
               "DocumentMoniker": "E:\\PUSH\\GSP\\GUI\\GUI\\ThemNguoiDung.cs",
               "RelativeDocumentMoniker": "GUI\\ThemNguoiDung.cs",

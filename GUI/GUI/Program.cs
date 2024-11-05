@@ -16,11 +16,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new QuanTriNguoiDung());
-=======
-            Application.Run(new ChiTietNhapKho());
->>>>>>> 15a797bbfebd79be5fd6e35ee77e615a1da51cf4
         }
     }
 }
