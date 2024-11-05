@@ -41,7 +41,7 @@ namespace BLL
             {
                 throw new ArgumentException("Mật khẩu và xác nhận mật khẩu không khớp.");
             }
-              
+
             UserDTO newUser = new UserDTO
             {
                 MaNhanVienID = "", // Giá trị này sẽ được sinh tự động trong stored procedure
@@ -49,7 +49,7 @@ namespace BLL
                 ChucVuID = chucVuID,
                 Username = username
             };
-            //gay
+
             int result = userDAL.AddUserWithProcedure(newUser, password);
 
             if (result == -1)
