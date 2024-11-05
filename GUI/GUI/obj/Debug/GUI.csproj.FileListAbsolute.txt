@@ -116,3 +116,5 @@ C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
 C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
 C:\GSP\GUI\GUI\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
 C:\GSP\GUI\GUI\obj\Debug\GUI.ThemNguoiDung.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Kho.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.exe.licenses
