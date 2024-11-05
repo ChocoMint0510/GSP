@@ -8,7 +8,7 @@ namespace DAL // Thêm namespace cho lớp DAL
 {
     public class UserDAL
     {
-        public string connectionString = "Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True";
+        public string connectionString = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
 
 
         // Hàm kiểm tra xem nhân viên có tồn tại dựa trên Username

@@ -17,7 +17,7 @@ namespace BLL
         public bool Login(string username, string password)
         {
             SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder();
-            connStringBuilder.DataSource = "NARIZMUSIC\\CHOCOPRO";
+            connStringBuilder.DataSource = "LAPTOP-NITRO5";
             connStringBuilder.InitialCatalog = "QuanLyGSP";
             connStringBuilder.UserID = username;
             connStringBuilder.Password = password;
