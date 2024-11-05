@@ -64,5 +64,11 @@ namespace DAL
             }
             return reader;
         }
+
+        public SqlConnection Connection
+        {
+            get { return conn; }
+        }
+
     }
 }
