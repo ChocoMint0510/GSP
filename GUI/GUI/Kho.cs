@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
+    public partial class Kho : DevExpress.XtraEditors.XtraForm
     {
-        public XtraForm1()
+        public Kho()
         {
             InitializeComponent();
         }
