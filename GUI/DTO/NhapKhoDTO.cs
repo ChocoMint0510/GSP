@@ -24,7 +24,7 @@ namespace DTO
             this.IDKho = idKho;
             this.IDNhanVien = idNhanVien;
             this.GhiChu = ghiChu;
-            this.GiaTriDonHang = giaTriDonHang;
+            this.GiaTriDonHang = giaTriDonHang; //test
         }
 
     }
