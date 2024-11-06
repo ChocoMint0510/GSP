@@ -9,6 +9,6 @@ namespace DAL
 {
     internal class NhapKhoDAL
     {
-        ///test minh tri + dat
+        ///test minh tri lan 2 + dat
     }
 }
