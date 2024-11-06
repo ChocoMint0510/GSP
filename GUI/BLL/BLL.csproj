@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KhoBLL.cs" />
+    <Compile Include="KhuBLL.cs" />
     <Compile Include="NhapKhoBLL.cs" />
     <Compile Include="UserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

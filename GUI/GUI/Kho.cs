@@ -15,6 +15,7 @@ namespace GUI
     public partial class Kho : Form
     {
         private KhoBLL khoBLL;
+        private bool isEditing = false;
         public Kho()
         {
             InitializeComponent();
@@ -94,6 +95,7 @@ namespace GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
+            isEditing = false;
             txt_TenKho.Enabled = true;
             txt_GhiChu.Enabled = true;
             ClearTxt(); 
@@ -113,16 +115,57 @@ namespace GUI
 
             try
             {
-                khoBLL.ThemKho(newKho);
-                MessageBox.Show("Thêm kho thành công!");
+                if (isEditing)
+                {
+                    newKho.IDKho = txt_IDKho.Text; 
+                    khoBLL.SuaKho(newKho);
+                    MessageBox.Show("Cập nhật kho thành công!");
+                }
+                else
+                {
+                    khoBLL.ThemKho(newKho);
+                    MessageBox.Show("Thêm kho thành công!");
+                }
+
                 LoadKhoData();
                 ClearTxt();
+
                 txt_TenKho.Enabled = false;
                 txt_GhiChu.Enabled = false;
+                txt_IDKho.Enabled = false;
                 btn_Luu.Enabled = false;
                 btn_CapNhat.Enabled = true;
                 btn_Xoa.Enabled = true;
                 btn_Them.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btn_CapNhat_Click(object sender, EventArgs e)
+        {
+            isEditing = true;
+            txt_TenKho.Enabled = true;
+            txt_GhiChu.Enabled = true;
+            txt_IDKho.Enabled = false;
+
+            btn_Luu.Enabled = true;
+            btn_Them.Enabled = false;
+            btn_Xoa.Enabled = false;
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            string selectedIDKho = txt_IDKho.Text;
+            try
+            {
+                if (khoBLL.XoaKho(selectedIDKho))
+                {
+                    MessageBox.Show("Xóa kho thành công!");
+                    LoadKhoData();
+                }
             }
             catch (Exception ex)
             {

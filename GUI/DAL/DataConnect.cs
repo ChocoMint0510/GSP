@@ -11,9 +11,9 @@
         internal class DataConnect
         {
             public string strConn = @"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
-            private SqlCommand cmd = null;
-            private SqlConnection conn = null;
-            private SqlDataReader reader = null;
+            public SqlCommand cmd = null;
+            public SqlConnection conn = null;
+            public SqlDataReader reader = null;
 
             public DataConnect()
             {

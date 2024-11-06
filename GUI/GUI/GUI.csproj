@@ -36,8 +36,10 @@
     <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -89,6 +91,12 @@
     </Compile>
     <Compile Include="Kho.Designer.cs">
       <DependentUpon>Kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khu.Designer.cs">
+      <DependentUpon>Khu.cs</DependentUpon>
     </Compile>
     <Compile Include="KiemKeDoiChieu.cs">
       <SubType>Form</SubType>
@@ -175,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kho.resx">
       <DependentUpon>Kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khu.resx">
+      <DependentUpon>Khu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KiemKeDoiChieu.resx">
       <DependentUpon>KiemKeDoiChieu.cs</DependentUpon>
