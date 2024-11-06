@@ -13,7 +13,6 @@ namespace GUI
 {
     public partial class DangNhap : Form
     {
-        private UserBLL userBLL = new UserBLL();
 
         public DangNhap()
         {
@@ -34,22 +33,24 @@ namespace GUI
             string username = txtTaiKhoan.Text;
             string password = txtMatKhau.Text;
 
-            // Kiểm tra người dùng có nhập đủ thông tin không
+            // Kiểm tra nếu người dùng nhập đầy đủ thông tin
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Gọi đến BLL để thực hiện đăng nhập
+            // Khởi tạo UserBLL với thông tin đăng nhập từ form
+            UserBLL userBLL = new UserBLL(username, password);
+
             if (userBLL.Login(username, password))
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Chuyển tới form chính của hệ thống
-                Main mainForm = new Main();
+                // Truyền username và password sang form QuanTriNguoiDung
+                QuanTriNguoiDung mainForm = new QuanTriNguoiDung(username, password);
                 mainForm.Show();
-                this.Hide(); // Ẩn form đăng nhập
+                this.Hide();
             }
             else
             {

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DAL;
 using DTO;
 
@@ -12,29 +7,39 @@ namespace BLL
 {
     public class UserBLL
     {
-        public UserDAL userDAL = new UserDAL();
+        private UserDAL userDAL;
+
+        // Khởi tạo UserBLL với thông tin đăng nhập
+        public UserBLL(string username, string password)
+        {
+            userDAL = new UserDAL(username, password);
+        }
 
         public bool Login(string username, string password)
         {
-            SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder();
-            connStringBuilder.DataSource = "LAPTOP-NITRO5";
-            connStringBuilder.InitialCatalog = "QuanLyGSP";
-            connStringBuilder.UserID = username;
-            connStringBuilder.Password = password;
+            SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder
+            {
+                DataSource = "NARIZMUSIC\\CHOCOPRO", // Đảm bảo tên máy chủ chính xác
+                InitialCatalog = "QuanLyGSP",
+                UserID = username,
+                Password = password
+            };
 
             try
             {
                 using (SqlConnection conn = new SqlConnection(connStringBuilder.ConnectionString))
                 {
                     conn.Open();
-                    return true; // Login thành công
+                    return true; // Đăng nhập thành công
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                return false; // Login thất bại
+                Console.WriteLine("Lỗi khi đăng nhập: " + ex.Message);
+                return false; // Đăng nhập thất bại
             }
         }
+
         public bool AddUser(string tenNhanVien, string chucVuID, string username, string password, string confirmPassword)
         {
             if (password != confirmPassword)
@@ -44,7 +49,7 @@ namespace BLL
 
             UserDTO newUser = new UserDTO
             {
-                MaNhanVienID = "", // Giá trị này sẽ được sinh tự động trong stored procedure
+                MaNhanVienID = "", // ID sẽ tự động sinh
                 TenNhanVien = tenNhanVien,
                 ChucVuID = chucVuID,
                 Username = username
@@ -57,42 +62,17 @@ namespace BLL
                 throw new InvalidOperationException("Tên login đã tồn tại. Vui lòng chọn tên khác.");
             }
 
-            return true;
+            return result == 0;
         }
 
-
-
-        // Phương thức kiểm tra trùng lặp Username hoặc Login
         public bool CheckDuplicateUsernameOrLogin(string username)
         {
-            string connectionString = "Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand("sp_CheckDuplicateUsernameOrLogin", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Username", username);
-
-                SqlParameter returnParameter = cmd.Parameters.Add("ReturnValue", SqlDbType.Int);
-                returnParameter.Direction = ParameterDirection.ReturnValue;
-
-                try
-                {
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    int result = (int)returnParameter.Value;
-
-                    // Kiểm tra kết quả trả về từ stored procedure
-                    return result == -1 || result == -2;
-                }
-                catch (SqlException ex)
-                {
-                    Console.WriteLine("Lỗi khi kiểm tra trùng lặp: " + ex.Message);
-                    return true; // Trả về true để an toàn trong trường hợp có lỗi SQL
-                }
-            }
+            return userDAL.CheckDuplicateUsernameOrLogin(username);
         }
 
+        public bool DeleteUser(string maNhanVien, string username)
+        {
+            return userDAL.DeleteUser(maNhanVien, username);
+        }
     }
 }
-
