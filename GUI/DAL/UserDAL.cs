@@ -1,115 +1,74 @@
-﻿// DAL/UserDAL.cs
-using DTO;
+﻿using System;
 using System.Data;
-using System;
 using System.Data.SqlClient;
+using DTO;
 
-namespace DAL // Thêm namespace cho lớp DAL
+namespace DAL
 {
     public class UserDAL
     {
-        public string connectionString = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
+        private DataConnect dataConnect;
 
+        // Khởi tạo UserDAL với thông tin đăng nhập động
+        public UserDAL(string username, string password)
+        {
+            dataConnect = new DataConnect(username, password);
+        }
 
-        // Hàm kiểm tra xem nhân viên có tồn tại dựa trên Username
         public UserDTO GetUserByUsername(string username)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM NhanVien WHERE Username = @Username";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Username", username);
-                SqlDataReader reader = cmd.ExecuteReader();
+            string query = "SELECT * FROM NhanVien WHERE Username = @Username";
+            SqlParameter[] parameters = { new SqlParameter("@Username", username) };
+            DataTable result = dataConnect.GetData(query, parameters);
 
-                if (reader.Read())
-                {
-                    return new UserDTO(
-                        reader["MaNhanVienID"].ToString(),
-                        reader["TenNhanVien"].ToString(),
-                        reader["ChucVuID"].ToString(),
-                        reader["Username"].ToString()
-                    );
-                }
+            if (result.Rows.Count > 0)
+            {
+                DataRow row = result.Rows[0];
+                return new UserDTO(
+                    row["IDNhanVien"].ToString(),
+                    row["TenNhanVien"].ToString(),
+                    row["IDChucVu"].ToString(),
+                    row["Username"].ToString()
+                );
             }
             return null;
         }
 
-        // Hàm thêm nhân viên mới
-        public bool AddUser(UserDTO user)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO NhanVien (MaNhanVienID, TenNhanVien, ChucVuID, Username) VALUES (@MaNhanVienID, @TenNhanVien, @ChucVuID, @Username)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaNhanVienID", user.MaNhanVienID);
-                cmd.Parameters.AddWithValue("@TenNhanVien", user.TenNhanVien);
-                cmd.Parameters.AddWithValue("@ChucVuID", user.ChucVuID);
-                cmd.Parameters.AddWithValue("@Username", user.Username);
-
-                int result = cmd.ExecuteNonQuery();
-                return result > 0;
-            }
-        }
-
-        // Tạo login trong SQL Server
-        public bool CreateSqlLogin(string username, string password)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();    
-                string query = $"CREATE LOGIN {username} WITH PASSWORD = '{password}';";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                int result = cmd.ExecuteNonQuery();
-                return result > 0;
-            }
-        }
-
-        // Gán quyền truy cập cho user trong SQL Server
-        public bool GrantUserAccess(string username)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = $"CREATE USER {username} FOR LOGIN {username};";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                int result = cmd.ExecuteNonQuery();
-                return result > 0;
-            }
-        }
-        // Thêm phương thức này vào UserDAL.cs
         public int AddUserWithProcedure(UserDTO user, string password)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand("sp_AddNhanVien", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@TenNhanVien", user.TenNhanVien);
-                cmd.Parameters.AddWithValue("@IDChucVu", user.ChucVuID);
-                cmd.Parameters.AddWithValue("@Username", user.Username);
-                cmd.Parameters.AddWithValue("@Password", password);
-
-                SqlParameter returnParameter = cmd.Parameters.Add("ReturnValue", SqlDbType.Int);
-                returnParameter.Direction = ParameterDirection.ReturnValue;
-
-                try
-                {
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    return (int)returnParameter.Value;
-                }
-                catch (SqlException ex)
-                {
-                    Console.WriteLine("Lỗi khi thêm người dùng: " + ex.Message);
-                    return -2; // Một mã lỗi khác cho các lỗi SQL khác
-                }
-            }
+            SqlParameter[] parameters = {
+                new SqlParameter("@TenNhanVien", user.TenNhanVien),
+                new SqlParameter("@IDChucVu", user.ChucVuID),
+                new SqlParameter("@Username", user.Username),
+                new SqlParameter("@Password", password)
+            };
+            return dataConnect.ExecuteStoredProcedure("sp_AddNhanVien", parameters);
         }
 
+        public bool CheckDuplicateUsernameOrLogin(string username)
+        {
+            SqlParameter[] parameters = { new SqlParameter("@Username", username) };
+            int result = dataConnect.ExecuteStoredProcedure("sp_CheckDuplicateUsernameOrLogin", parameters);
+            return result == -1 || result == -2;
+        }
 
+        public bool DeleteUser(string maNhanVien, string username)
+        {
+            SqlParameter[] parameters = {
+                new SqlParameter("@MaNhanVien", maNhanVien),
+                new SqlParameter("@Username", username)
+            };
 
-
+            try
+            {
+                int result = dataConnect.ExecuteStoredProcedure("sp_DeleteNhanVien", parameters);
+                return result == 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi xóa nhân viên: " + ex.Message);
+                return false;
+            }
+        }
     }
 }

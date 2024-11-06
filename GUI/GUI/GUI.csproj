@@ -35,8 +35,10 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapLaiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapLaiMatKhau.Designer.cs">
+      <DependentUpon>CapLaiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhat.Designer.cs">
+      <DependentUpon>CapNhat.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChiTietNhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +166,12 @@
     <Compile Include="XuatKho.Designer.cs">
       <DependentUpon>XuatKho.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CapLaiMatKhau.resx">
+      <DependentUpon>CapLaiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhat.resx">
+      <DependentUpon>CapNhat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChiTietNhapKho.resx">
       <DependentUpon>ChiTietNhapKho.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,68 +1,111 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class DataConnect
+    public class DataConnect
     {
-        private string strConn = "Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;Integrated Security=True";
-        private SqlCommand cmd = null;
-        private SqlConnection conn = null;
-        private SqlDataReader reader = null;
+        private SqlConnection conn;
+        private SqlCommand cmd;
 
-        public DataConnect()
+        public DataConnect(string username, string password)
         {
+            string strConn = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={username};Password={password}";
             conn = new SqlConnection(strConn);
         }
 
-        public void openConnection()
+        public void OpenConnection()
         {
-            try 
+            if (conn.State == ConnectionState.Closed)
             {
-                if (conn.State == ConnectionState.Closed)
-                    conn.Open();
-            } catch (Exception ex){
-
-                throw ex;
-            }  
-            
+                conn.Open();
+            }
         }
 
-        public void closeConnection()
+        public void CloseConnection()
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+
+        public int ExecuteNonQuery(string query, SqlParameter[] parameters = null)
         {
             try
             {
-                if (conn.State == ConnectionState.Open)
-                    conn.Close();
+                OpenConnection();
+                cmd = new SqlCommand(query, conn);
+                if (parameters != null)
+                {
+                    cmd.Parameters.AddRange(parameters);
+                }
+                return cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new Exception("Error executing query: " + ex.Message);
             }
-
+            finally
+            {
+                CloseConnection();
+            }
         }
 
-        public SqlDataReader GetData(string table)
+        public int ExecuteStoredProcedure(string storedProcedure, SqlParameter[] parameters = null)
         {
             try
             {
-                string sql = "Select * from " + table;
-                cmd = new SqlCommand(sql);
-                cmd.Connection = conn;
-                this.openConnection();
-                reader = cmd.ExecuteReader();
+                OpenConnection();
+                cmd = new SqlCommand(storedProcedure, conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                if (parameters != null)
+                {
+                    cmd.Parameters.AddRange(parameters);
+                }
+                cmd.Parameters.Add(new SqlParameter("@ReturnValue", SqlDbType.Int)
+                {
+                    Direction = ParameterDirection.ReturnValue
+                });
+                cmd.ExecuteNonQuery();
+                return (int)cmd.Parameters["@ReturnValue"].Value;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error executing stored procedure: " + ex.Message);
             }
-            return reader;
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        public DataTable GetData(string query, SqlParameter[] parameters = null)
+        {
+            try
+            {
+                OpenConnection();
+                cmd = new SqlCommand(query, conn);
+                if (parameters != null)
+                {
+                    cmd.Parameters.AddRange(parameters);
+                }
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error fetching data: " + ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
         }
     }
 }

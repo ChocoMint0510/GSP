@@ -1,22 +1,22 @@
 ﻿using BLL;
 using System;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Windows.Forms;
 
 namespace GUI
 {
     public partial class ThemNguoiDung : Form
     {
-        // Khai báo đối tượng UserBLL
+        private string _username;
+        private string _password;
         private UserBLL userBLL;
-
-        public ThemNguoiDung()
+        public ThemNguoiDung(string username, string password)
         {
             InitializeComponent();
-
-            // Khởi tạo đối tượng UserBLL
-            userBLL = new UserBLL();
+            _username = username;
+            _password = password;
+            userBLL = new UserBLL(_username, _password);
         }
 
         private void btn_addNguoiDung_Click(object sender, EventArgs e)
@@ -27,7 +27,6 @@ namespace GUI
             string password = txt_addMatKhau.Text;
             string confirmPassword = txt_XacNhanMatKhau.Text;
 
-            // Kiểm tra mật khẩu và xác nhận mật khẩu có khớp hay không
             if (password != confirmPassword)
             {
                 MessageBox.Show("Mật khẩu và xác nhận mật khẩu không khớp.");
@@ -35,7 +34,6 @@ namespace GUI
                 return;
             }
 
-            // Kiểm tra trùng lặp Username hoặc Login
             if (userBLL.CheckDuplicateUsernameOrLogin(username))
             {
                 MessageBox.Show("Username hoặc Login đã tồn tại. Vui lòng chọn tên khác.");
@@ -45,53 +43,55 @@ namespace GUI
 
             try
             {
-                // Thêm nhân viên mới
                 bool success = userBLL.AddUser(tenNhanVien, chucVu, username, password, confirmPassword);
                 if (success)
                 {
                     MessageBox.Show("Thêm người dùng thành công.");
-                    this.Close(); // Đóng form ThemNguoiDung nếu thêm thành công
+                    this.DialogResult = DialogResult.OK; // Đặt DialogResult là OK để báo thành công
+                    this.Close();
                 }
-            }
-            catch (ArgumentException ex)
-            {
-                MessageBox.Show(ex.Message);
-                txt_addMatKhau.Focus();
-            }
-            catch (InvalidOperationException ex)
-            {
-                MessageBox.Show(ex.Message);
-                txt_addTenTK.Focus();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi không xác định: " + ex.Message);
-            }
-        }
-
-        private void ThemNguoiDung_Load(object sender, EventArgs e)
-        {
-            using (SqlConnection conn = new SqlConnection("Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;Integrated Security=True"))
-            {
-                conn.Open();
-
-                // Load dữ liệu vào cb_addchucvu
-                SqlDataAdapter daChucVu = new SqlDataAdapter("SELECT IDChucVu, TenChucVu FROM ChucVu", conn);
-                DataTable dtChucVu = new DataTable();
-                daChucVu.Fill(dtChucVu);
-                cb_addchucvu.DataSource = dtChucVu;
-                cb_addchucvu.DisplayMember = "TenChucVu";
-                cb_addchucvu.ValueMember = "IDChucVu";
+                MessageBox.Show("Lỗi khi thêm người dùng: " + ex.Message);
             }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            // Thêm mã xử lý nếu cần hoặc để trống nếu không có chức năng nào
         }
+
         private void label6_Click(object sender, EventArgs e)
         {
+            // Thêm mã xử lý nếu cần hoặc để trống nếu không có chức năng nào
+        }
 
+        private void ThemNguoiDung_Load(object sender, EventArgs e)
+        {
+            string connectionString = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_username};Password={_password}";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open(); // Mở kết nối
+
+                    // Lấy dữ liệu từ bảng ChucVu
+                    SqlDataAdapter daChucVu = new SqlDataAdapter("SELECT IDChucVu, TenChucVu FROM ChucVu", conn);
+                    DataTable dtChucVu = new DataTable();
+                    daChucVu.Fill(dtChucVu);
+
+                    // Cài đặt nguồn dữ liệu cho ComboBox
+                    cb_addchucvu.DataSource = dtChucVu;
+                    cb_addchucvu.DisplayMember = "TenChucVu";
+                    cb_addchucvu.ValueMember = "IDChucVu";
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi khi kết nối cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
