@@ -15,8 +15,8 @@ namespace GUI
     public partial class QuanTriNguoiDung : Form
     {
         private UserBLL userBLL;
-        private string _username; // Khai báo biến _username
-        private string _password; // Khai báo biến _password
+        private string _username;
+        private string _password;
 
         public QuanTriNguoiDung(string username, string password)
         {
@@ -36,7 +36,6 @@ namespace GUI
         {
             ThemNguoiDung themNguoiDungForm = new ThemNguoiDung(_username, _password);
 
-            // Kiểm tra nếu nhân viên đã được thêm thành công
             if (themNguoiDungForm.ShowDialog() == DialogResult.OK)
             {
                 LoadUserData(); // Cập nhật lại danh sách sau khi thêm nhân viên
@@ -54,53 +53,39 @@ namespace GUI
         }
         private void LoadUserData()
         {
-            string connectionString = $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_username};Password={_password}";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open(); // Mở kết nối
-                    SqlCommand cmd = new SqlCommand("sp_GetUserData", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                DataTable dt = userBLL.GetAllUsers();
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-
-                    // Xử lý dữ liệu và chuyển đổi cho DataGridView
-                    var groupedData = dt.AsEnumerable()
-                        .Select(row => new
-                        {
-                            MaNhanVien = row["MaNhanVien"],
-                            Username = row["Username"],
-                            HoVaTen = row["HoVaTen"],
-                            ChucVu = row["ChucVu"]
-                        })
-                        .ToList();
-
-                    DataTable resultTable = new DataTable();
-                    resultTable.Columns.Add("MaNhanVien");
-                    resultTable.Columns.Add("Username");
-                    resultTable.Columns.Add("HoVaTen");
-                    resultTable.Columns.Add("ChucVu");
-
-                    foreach (var item in groupedData)
+                // Xử lý dữ liệu và chuyển đổi cho DataGridView
+                var groupedData = dt.AsEnumerable()
+                    .Select(row => new
                     {
-                        resultTable.Rows.Add(item.MaNhanVien, item.Username, item.HoVaTen, item.ChucVu);
-                    }
+                        MaNhanVien = row["MaNhanVien"],
+                        Username = row["Username"],
+                        HoVaTen = row["HoVaTen"],
+                        ChucVu = row["ChucVu"]
+                    })
+                    .ToList();
 
-                    dgv_DanhSach.DataSource = resultTable;
-                }
-                catch (SqlException ex)
+                DataTable resultTable = new DataTable();
+                resultTable.Columns.Add("MaNhanVien");
+                resultTable.Columns.Add("Username");
+                resultTable.Columns.Add("HoVaTen");
+                resultTable.Columns.Add("ChucVu");
+
+                foreach (var item in groupedData)
                 {
-                    MessageBox.Show("Lỗi khi kết nối cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    resultTable.Rows.Add(item.MaNhanVien, item.Username, item.HoVaTen, item.ChucVu);
                 }
+
+                dgv_DanhSach.DataSource = resultTable;
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu người dùng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-
 
         private void dgv_DanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -140,7 +125,7 @@ namespace GUI
             {
                 try
                 {
-                    bool success = userBLL.DeleteUser(maNhanVien, txt_UserName.Text); // Gọi qua đối tượng userBLL
+                    bool success = userBLL.DeleteUser(maNhanVien, txt_UserName.Text);
 
                     if (success)
                     {
@@ -167,30 +152,25 @@ namespace GUI
                 return;
             }
 
-            // Truyền thông tin sang form CapNhat
             string maNV = txt_MaNV.Text;
             string tenTK = txt_UserName.Text;
             string hoTen = txt_HoTen.Text;
             string chucVu = txt_ChucVu.Text;
 
-            // Sử dụng _username và _password hiện tại để đăng nhập và cập nhật
             CapNhat capNhatForm = new CapNhat(maNV, tenTK, hoTen, chucVu, _username, _password);
             capNhatForm.ShowDialog();
 
-            // Cập nhật lại danh sách nhân viên sau khi đóng form CapNhat
             LoadUserData();
         }
 
         private void btn_CapLaiMatKhau_Click(object sender, EventArgs e)
         {
-            // Kiểm tra nếu chưa chọn user
             if (string.IsNullOrWhiteSpace(txt_MaNV.Text))
             {
                 MessageBox.Show("Hãy chọn một user để cấp lại mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Truyền thông tin sang form CapLaiMatKhau
             string maNV = txt_MaNV.Text;
             string tenTK = txt_UserName.Text;
 

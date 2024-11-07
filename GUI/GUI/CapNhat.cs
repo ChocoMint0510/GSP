@@ -7,6 +7,8 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using BLL;
+using DAL;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static DevExpress.Data.Helpers.FindSearchRichParser;
@@ -23,6 +25,7 @@ namespace GUI
 
         private string _loginUsername;
         private string _loginPassword;
+        private DataConnect dataConnect;
 
         public CapNhat(string maNV, string username, string hoTen, string chucVu, string loginUsername, string loginPassword)
         {
@@ -33,6 +36,7 @@ namespace GUI
             _chucVu = chucVu;
             _loginUsername = loginUsername;
             _loginPassword = loginPassword;
+            dataConnect = new DataConnect(_loginUsername, _loginPassword);
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -46,22 +50,20 @@ namespace GUI
             txt_updTenTK.Text = _username;
             txt_updTen.Text = _hoTen;
 
-            string connectionString =
-                $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                conn.Open();
-                SqlDataAdapter da = new SqlDataAdapter("SELECT IDChucVu, TenChucVu FROM ChucVu", conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
+                // Lấy danh sách chức vụ để hiển thị trong ComboBox
+                DataTable dt = dataConnect.GetData("SELECT IDChucVu, TenChucVu FROM ChucVu");
                 cb_updChucVu.DataSource = dt;
                 cb_updChucVu.DisplayMember = "TenChucVu";
                 cb_updChucVu.ValueMember = "IDChucVu";
 
                 // Đặt giá trị ban đầu cho ComboBox
                 cb_updChucVu.SelectedIndex = cb_updChucVu.FindStringExact(_chucVu);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu chức vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -78,33 +80,32 @@ namespace GUI
 
             if (result == DialogResult.Yes)
             {
-                string connectionString =
-                    $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
-
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                SqlParameter[] parameters = new SqlParameter[]
                 {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand("sp_UpdateNhanVien", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                    new SqlParameter("@MaNhanVien", _maNV),
+                    new SqlParameter("@TenNhanVien", newHoTen),
+                    new SqlParameter("@IDChucVu", newChucVuID),
+                    new SqlParameter("@Username", newUsername)
+                };
 
-                    cmd.Parameters.AddWithValue("@MaNhanVien", _maNV);
-                    cmd.Parameters.AddWithValue("@TenNhanVien", newHoTen);
-                    cmd.Parameters.AddWithValue("@IDChucVu", newChucVuID);
-                    cmd.Parameters.AddWithValue("@Username", newUsername);
+                try
+                {
+                    int updateResult = dataConnect.ExecuteStoredProcedure("sp_UpdateNhanVien", parameters);
 
-                    try
+                    if (updateResult == 0)
                     {
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Cập nhật thông tin thành công.", "Thông báo", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+                        MessageBox.Show("Cập nhật thông tin thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.DialogResult = DialogResult.OK; // Đóng form và trả về OK
                         this.Close();
                     }
-                    catch (SqlException ex)
+                    else
                     {
-                        MessageBox.Show("Lỗi khi cập nhật thông tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK,
-                            MessageBoxIcon.Error);
+                        MessageBox.Show("Lỗi khi cập nhật thông tin. Kiểm tra lại thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi cập nhật thông tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

@@ -44,8 +44,8 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(128, 28);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Location = new System.Drawing.Point(125, 31);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(180, 31);
             this.labelControl1.TabIndex = 0;
@@ -63,8 +63,8 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(44, 121);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.labelControl2.Location = new System.Drawing.Point(55, 123);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(110, 23);
             this.labelControl2.TabIndex = 21;
@@ -82,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 175);
+            this.label2.Location = new System.Drawing.Point(51, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 19;
@@ -99,8 +99,8 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(44, 229);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl3.Location = new System.Drawing.Point(55, 231);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(108, 23);
             this.labelControl3.TabIndex = 25;
@@ -117,7 +117,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 282);
+            this.label1.Location = new System.Drawing.Point(51, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 23);
             this.label1.TabIndex = 23;
@@ -127,10 +127,10 @@
             // 
             this.btn_updMKCapNhat.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_updMKCapNhat.Appearance.Options.UseFont = true;
-            this.btn_updMKCapNhat.Location = new System.Drawing.Point(149, 357);
-            this.btn_updMKCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_updMKCapNhat.Location = new System.Drawing.Point(145, 352);
+            this.btn_updMKCapNhat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_updMKCapNhat.Name = "btn_updMKCapNhat";
-            this.btn_updMKCapNhat.Size = new System.Drawing.Size(103, 72);
+            this.btn_updMKCapNhat.Size = new System.Drawing.Size(121, 75);
             this.btn_updMKCapNhat.TabIndex = 27;
             this.btn_updMKCapNhat.Text = "Cập Nhật";
             this.btn_updMKCapNhat.Click += new System.EventHandler(this.btn_updMKCapNhat_Click);

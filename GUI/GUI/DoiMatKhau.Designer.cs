@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Huy = new System.Windows.Forms.Button();
+            this.txt_DMKLuu = new System.Windows.Forms.Button();
+            this.txt_CNPass = new System.Windows.Forms.TextBox();
+            this.txt_NPass = new System.Windows.Forms.TextBox();
+            this.txt_OPass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_Username = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Username);
+            this.panel1.Controls.Add(this.txt_Huy);
+            this.panel1.Controls.Add(this.txt_DMKLuu);
+            this.panel1.Controls.Add(this.txt_CNPass);
+            this.panel1.Controls.Add(this.txt_NPass);
+            this.panel1.Controls.Add(this.txt_OPass);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -61,54 +61,63 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(635, 553);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button1
+            // txt_Huy
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(142, 431);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 55);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txt_Huy.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Huy.Location = new System.Drawing.Point(318, 431);
+            this.txt_Huy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Huy.Name = "txt_Huy";
+            this.txt_Huy.Size = new System.Drawing.Size(119, 55);
+            this.txt_Huy.TabIndex = 20;
+            this.txt_Huy.Text = "Huỷ";
+            this.txt_Huy.UseVisualStyleBackColor = true;
+            this.txt_Huy.Click += new System.EventHandler(this.txt_Huy_Click);
             // 
-            // textBox4
+            // txt_DMKLuu
             // 
-            this.textBox4.Location = new System.Drawing.Point(273, 343);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 22);
-            this.textBox4.TabIndex = 18;
+            this.txt_DMKLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DMKLuu.Location = new System.Drawing.Point(142, 431);
+            this.txt_DMKLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_DMKLuu.Name = "txt_DMKLuu";
+            this.txt_DMKLuu.Size = new System.Drawing.Size(119, 55);
+            this.txt_DMKLuu.TabIndex = 19;
+            this.txt_DMKLuu.Text = "Lưu";
+            this.txt_DMKLuu.UseVisualStyleBackColor = true;
+            this.txt_DMKLuu.Click += new System.EventHandler(this.txt_DMKLuu_Click);
             // 
-            // textBox3
+            // txt_CNPass
             // 
-            this.textBox3.Location = new System.Drawing.Point(273, 290);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 22);
-            this.textBox3.TabIndex = 17;
+            this.txt_CNPass.Location = new System.Drawing.Point(279, 326);
+            this.txt_CNPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_CNPass.Name = "txt_CNPass";
+            this.txt_CNPass.Size = new System.Drawing.Size(243, 22);
+            this.txt_CNPass.TabIndex = 18;
+            this.txt_CNPass.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // txt_NPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(273, 242);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 22);
-            this.textBox2.TabIndex = 16;
+            this.txt_NPass.Location = new System.Drawing.Point(279, 273);
+            this.txt_NPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_NPass.Name = "txt_NPass";
+            this.txt_NPass.Size = new System.Drawing.Size(243, 22);
+            this.txt_NPass.TabIndex = 17;
+            this.txt_NPass.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // txt_OPass
             // 
-            this.textBox1.Location = new System.Drawing.Point(273, 187);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 22);
-            this.textBox1.TabIndex = 15;
+            this.txt_OPass.Location = new System.Drawing.Point(279, 225);
+            this.txt_OPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_OPass.Name = "txt_OPass";
+            this.txt_OPass.Size = new System.Drawing.Size(243, 22);
+            this.txt_OPass.TabIndex = 16;
+            this.txt_OPass.UseSystemPasswordChar = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 295);
+            this.label5.Location = new System.Drawing.Point(123, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 16);
             this.label5.TabIndex = 14;
@@ -117,7 +126,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(117, 350);
+            this.label4.Location = new System.Drawing.Point(123, 333);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 16);
             this.label4.TabIndex = 13;
@@ -126,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(117, 245);
+            this.label3.Location = new System.Drawing.Point(123, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 16);
             this.label3.TabIndex = 12;
@@ -135,32 +144,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 193);
+            this.label2.Location = new System.Drawing.Point(123, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Mã Nhân Viên";
+            this.label2.Text = "Username";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(229, 76);
+            this.label1.Location = new System.Drawing.Point(204, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 30);
+            this.label1.Size = new System.Drawing.Size(219, 37);
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐỔI MẬT KHẨU";
             // 
-            // button2
+            // txt_Username
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(318, 431);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 55);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Huỷ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txt_Username.Enabled = false;
+            this.txt_Username.Location = new System.Drawing.Point(279, 179);
+            this.txt_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Size = new System.Drawing.Size(243, 22);
+            this.txt_Username.TabIndex = 21;
             // 
             // DoiMatKhau
             // 
@@ -180,16 +187,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button txt_DMKLuu;
+        private System.Windows.Forms.TextBox txt_CNPass;
+        private System.Windows.Forms.TextBox txt_NPass;
+        private System.Windows.Forms.TextBox txt_OPass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button txt_Huy;
+        private System.Windows.Forms.TextBox txt_Username;
     }
 }

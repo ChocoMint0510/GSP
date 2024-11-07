@@ -15,6 +15,7 @@ namespace DAL
             dataConnect = new DataConnect(username, password);
         }
 
+        // Lấy thông tin user bằng username
         public UserDTO GetUserByUsername(string username)
         {
             string query = "SELECT * FROM NhanVien WHERE Username = @Username";
@@ -33,7 +34,13 @@ namespace DAL
             }
             return null;
         }
+        public DataTable GetChucVuList()
+        {
+            string query = "SELECT IDChucVu, TenChucVu FROM ChucVu";
+            return dataConnect.GetData(query);
+        }
 
+        // Thêm user bằng stored procedure
         public int AddUserWithProcedure(UserDTO user, string password)
         {
             SqlParameter[] parameters = {
@@ -44,7 +51,11 @@ namespace DAL
             };
             return dataConnect.ExecuteStoredProcedure("sp_AddNhanVien", parameters);
         }
-
+        public DataTable GetAllUsers()
+        {
+            return dataConnect.GetData("sp_GetUserData", null);
+        }
+        // Kiểm tra trùng tên đăng nhập hoặc login
         public bool CheckDuplicateUsernameOrLogin(string username)
         {
             SqlParameter[] parameters = { new SqlParameter("@Username", username) };
@@ -52,6 +63,7 @@ namespace DAL
             return result == -1 || result == -2;
         }
 
+        // Xóa user bằng stored procedure
         public bool DeleteUser(string maNhanVien, string username)
         {
             SqlParameter[] parameters = {
@@ -70,5 +82,59 @@ namespace DAL
                 return false;
             }
         }
+
+        // Thay đổi mật khẩu user
+        public bool ChangePassword(string username, string oldPassword, string newPassword)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Username", username),
+                new SqlParameter("@OldPassword", oldPassword),
+                new SqlParameter("@NewPassword", newPassword)
+            };
+
+            try
+            {
+                int result = dataConnect.ExecuteStoredProcedure("sp_ChangePassword", parameters);
+                return result == 0; // Trả về true nếu đổi mật khẩu thành công, false nếu thất bại
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi đổi mật khẩu: " + ex.Message);
+                return false;
+            }
+        }
+        public bool UpdatePassword(string username, string newPassword)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Username", username),
+                new SqlParameter("@NewPassword", newPassword)
+            };
+
+            int result = dataConnect.ExecuteStoredProcedure("sp_UpdatePassword", parameters);
+            return result == 0; // Trả về true nếu thành công
+        }
+        public bool DoiMatKhau(string username, string oldPassword, string newPassword)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Username", username),
+                new SqlParameter("@OldPassword", oldPassword),
+                new SqlParameter("@NewPassword", newPassword)
+            };
+
+            try
+            {
+                int result = dataConnect.ExecuteStoredProcedure("sp_DoiMatKhau", parameters);
+                return result == 0; // Trả về true nếu đổi mật khẩu thành công, false nếu thất bại
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi đổi mật khẩu: " + ex.Message);
+                return false;
+            }
+        }
+
     }
 }
