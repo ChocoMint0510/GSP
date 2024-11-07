@@ -19,7 +19,7 @@ namespace BLL
         {
             SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder
             {
-                DataSource = "NARIZMUSIC\\CHOCOPRO", // Đảm bảo tên máy chủ chính xác
+                DataSource = "LAPTOP-NITRO5", // Đảm bảo tên máy chủ chính xác
                 InitialCatalog = "QuanLyGSP",
                 UserID = username,
                 Password = password

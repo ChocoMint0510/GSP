@@ -69,7 +69,7 @@ namespace GUI
 
         private void ThemNguoiDung_Load(object sender, EventArgs e)
         {
-            string connectionString = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_username};Password={_password}";
+            string connectionString = $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_username};Password={_password}";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
