@@ -47,7 +47,7 @@ namespace GUI
             txt_updTen.Text = _hoTen;
 
             string connectionString =
-                $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
+                $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -79,7 +79,7 @@ namespace GUI
             if (result == DialogResult.Yes)
             {
                 string connectionString =
-                    $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
+                    $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {

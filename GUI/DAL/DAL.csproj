@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataConnect.cs" />
+    <Compile Include="KhoDAL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhapKhoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDAL.cs" />

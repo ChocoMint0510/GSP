@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhoDTO.cs" />
+    <Compile Include="NhaCungCapDTO.cs" />
     <Compile Include="NhapKhoDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDTO.cs" />

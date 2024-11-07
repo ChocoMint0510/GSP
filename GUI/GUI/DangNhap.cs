@@ -48,7 +48,8 @@ namespace GUI
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Truyền username và password sang form QuanTriNguoiDung
-                QuanTriNguoiDung mainForm = new QuanTriNguoiDung(username, password);
+                //QuanTriNguoiDung mainForm = new QuanTriNguoiDung(username, password);
+                NhapKho mainForm = new NhapKho(username, password);
                 mainForm.Show();
                 this.Hide();
             }
