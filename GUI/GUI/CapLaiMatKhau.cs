@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace GUI
         private string _username;
         private string _loginUsername;
         private string _loginPassword;
+        private UserBLL userBLL;
 
         public CapLaiMatKhau(string maNV, string username, string loginUsername, string loginPassword)
         {
@@ -26,6 +28,7 @@ namespace GUI
             _username = username;
             _loginUsername = loginUsername;
             _loginPassword = loginPassword;
+            userBLL = new UserBLL(_loginUsername, _loginPassword);
         }
 
         private void CapLaiMatKhau_Load(object sender, EventArgs e)
@@ -49,32 +52,28 @@ namespace GUI
 
             // Xác nhận lưu thay đổi
             DialogResult result = MessageBox.Show($"Bạn có muốn lưu thay đổi mật khẩu cho user '{_username}' không?",
-                                                  "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                string connectionString = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_loginUsername};Password={_loginPassword}";
-
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                try
                 {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand("sp_UpdatePassword", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                    bool success = userBLL.UpdatePassword(_username, newPassword);
 
-                    cmd.Parameters.AddWithValue("@Username", _username);
-                    cmd.Parameters.AddWithValue("@NewPassword", newPassword);
-
-                    try
+                    if (success)
                     {
-                        cmd.ExecuteNonQuery();
                         MessageBox.Show("Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.DialogResult = DialogResult.OK;
                         this.Close();
                     }
-                    catch (SqlException ex)
+                    else
                     {
-                        MessageBox.Show("Lỗi khi cập nhật mật khẩu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Lỗi khi cập nhật mật khẩu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi cập nhật mật khẩu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

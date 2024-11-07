@@ -44,8 +44,8 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(164, 13);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Location = new System.Drawing.Point(155, 14);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(208, 31);
             this.labelControl1.TabIndex = 0;
@@ -109,10 +109,10 @@
             // 
             this.btn_updLuu.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_updLuu.Appearance.Options.UseFont = true;
-            this.btn_updLuu.Location = new System.Drawing.Point(189, 318);
-            this.btn_updLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_updLuu.Location = new System.Drawing.Point(155, 320);
+            this.btn_updLuu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_updLuu.Name = "btn_updLuu";
-            this.btn_updLuu.Size = new System.Drawing.Size(136, 55);
+            this.btn_updLuu.Size = new System.Drawing.Size(170, 69);
             this.btn_updLuu.TabIndex = 16;
             this.btn_updLuu.Text = "Lưu Thay Đổi";
             this.btn_updLuu.Click += new System.EventHandler(this.btn_updLuu_Click);
@@ -122,7 +122,7 @@
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(69, 95);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(110, 23);
             this.labelControl2.TabIndex = 17;

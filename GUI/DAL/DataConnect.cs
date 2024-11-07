@@ -82,7 +82,20 @@ namespace DAL
                 CloseConnection();
             }
         }
-
+        public bool CheckConnection()
+        {
+            try
+            {
+                OpenConnection();
+                CloseConnection();
+                return true; // Đăng nhập thành công
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Lỗi khi đăng nhập: " + ex.Message);
+                return false; // Đăng nhập thất bại
+            }
+        }
         public DataTable GetData(string query, SqlParameter[] parameters = null)
         {
             try

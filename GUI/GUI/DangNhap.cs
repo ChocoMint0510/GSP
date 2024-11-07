@@ -43,7 +43,8 @@ namespace GUI
             // Khởi tạo UserBLL với thông tin đăng nhập từ form
             UserBLL userBLL = new UserBLL(username, password);
 
-            if (userBLL.Login(username, password))
+            // Kiểm tra đăng nhập
+            if (userBLL.Login())
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

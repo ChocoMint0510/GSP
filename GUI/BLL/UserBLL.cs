@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using DAL;
 using DTO;
@@ -7,39 +8,33 @@ namespace BLL
 {
     public class UserBLL
     {
+        private readonly string _username;
+        private readonly string _password;
         private UserDAL userDAL;
-
+        private DataConnect dataConnect;
         // Khởi tạo UserBLL với thông tin đăng nhập
         public UserBLL(string username, string password)
         {
+            _username = username;
+            _password = password;
+            userDAL = new UserDAL(_username, _password);
             userDAL = new UserDAL(username, password);
+            dataConnect = new DataConnect(username, password);
         }
-
-        public bool Login(string username, string password)
+        public DataTable GetChucVuList()
         {
-            SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder
-            {
-                DataSource = "NARIZMUSIC\\CHOCOPRO", // Đảm bảo tên máy chủ chính xác
-                InitialCatalog = "QuanLyGSP",
-                UserID = username,
-                Password = password
-            };
-
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connStringBuilder.ConnectionString))
-                {
-                    conn.Open();
-                    return true; // Đăng nhập thành công
-                }
-            }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("Lỗi khi đăng nhập: " + ex.Message);
-                return false; // Đăng nhập thất bại
-            }
+            return userDAL.GetChucVuList();
         }
 
+        public bool Login()
+        {
+            DataConnect dataConnect = new DataConnect(_username, _password);
+            return dataConnect.CheckConnection();
+        }
+        public DataTable GetAllUsers()
+        {
+            return userDAL.GetAllUsers();
+        }
         public bool AddUser(string tenNhanVien, string chucVuID, string username, string password, string confirmPassword)
         {
             if (password != confirmPassword)
@@ -64,6 +59,10 @@ namespace BLL
 
             return result == 0;
         }
+        public bool UpdatePassword(string username, string newPassword)
+        {
+            return userDAL.UpdatePassword(username, newPassword);
+        }
 
         public bool CheckDuplicateUsernameOrLogin(string username)
         {
@@ -74,5 +73,22 @@ namespace BLL
         {
             return userDAL.DeleteUser(maNhanVien, username);
         }
+        public bool ChangePassword(string username, string oldPassword, string newPassword)
+        {
+            try
+            {
+                return userDAL.ChangePassword(username, oldPassword, newPassword);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi đổi mật khẩu: " + ex.Message);
+                return false;
+            }
+        }
+        public bool DoiMatKhau(string username, string oldPassword, string newPassword)
+        {
+            return userDAL.DoiMatKhau(username, oldPassword, newPassword);
+        }
+
     }
 }

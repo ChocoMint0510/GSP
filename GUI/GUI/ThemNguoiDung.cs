@@ -47,7 +47,7 @@ namespace GUI
                 if (success)
                 {
                     MessageBox.Show("Thêm người dùng thành công.");
-                    this.DialogResult = DialogResult.OK; // Đặt DialogResult là OK để báo thành công
+                    this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
             }
@@ -69,28 +69,18 @@ namespace GUI
 
         private void ThemNguoiDung_Load(object sender, EventArgs e)
         {
-            string connectionString = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={_username};Password={_password}";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open(); // Mở kết nối
+                DataTable dtChucVu = userBLL.GetChucVuList();
 
-                    // Lấy dữ liệu từ bảng ChucVu
-                    SqlDataAdapter daChucVu = new SqlDataAdapter("SELECT IDChucVu, TenChucVu FROM ChucVu", conn);
-                    DataTable dtChucVu = new DataTable();
-                    daChucVu.Fill(dtChucVu);
-
-                    // Cài đặt nguồn dữ liệu cho ComboBox
-                    cb_addchucvu.DataSource = dtChucVu;
-                    cb_addchucvu.DisplayMember = "TenChucVu";
-                    cb_addchucvu.ValueMember = "IDChucVu";
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show("Lỗi khi kết nối cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                // Cài đặt nguồn dữ liệu cho ComboBox
+                cb_addchucvu.DataSource = dtChucVu;
+                cb_addchucvu.DisplayMember = "TenChucVu";
+                cb_addchucvu.ValueMember = "IDChucVu";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu chức vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
