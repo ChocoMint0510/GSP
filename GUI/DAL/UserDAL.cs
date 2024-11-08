@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using DTO;
@@ -134,6 +135,30 @@ namespace DAL
                 Console.WriteLine("Lỗi khi đổi mật khẩu: " + ex.Message);
                 return false;
             }
+        }
+
+        //Hiển thị ID và tên Nhân viên
+        public Dictionary<string, string> GetIDAndTenNhanVien()
+        {
+            Dictionary<string, string> tenNVList = new Dictionary<string, string>();
+
+            try
+            {
+                DataTable dataTable = dataConnect.GetData("sp_HienThiIDVaTenNhanVien");
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    string idNhanVien= row["IDNhanVien"].ToString();
+                    string tenNhanVien = row["TenNhanVien"].ToString();
+                    tenNVList.Add(idNhanVien, tenNhanVien);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi gọi stored procedure sp_HienThiIDVaTenNhanVien: " + ex.Message);
+            }
+
+            return tenNVList;
         }
 
     }

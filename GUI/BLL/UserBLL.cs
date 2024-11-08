@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using DAL;
@@ -88,6 +89,20 @@ namespace BLL
         public bool DoiMatKhau(string username, string oldPassword, string newPassword)
         {
             return userDAL.DoiMatKhau(username, oldPassword, newPassword);
+        }
+
+
+        public Dictionary<string, string> GetIDAndTenNhanVien()
+        {
+            try
+            {
+                // Gọi phương thức từ lớp UserDAL
+                return userDAL.GetIDAndTenNhanVien();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi lấy danh sách ID và Tên Nhân Viên: " + ex.Message);
+            }
         }
 
     }

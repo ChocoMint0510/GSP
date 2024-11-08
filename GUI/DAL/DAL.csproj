@@ -46,6 +46,7 @@
     <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhapKhoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThuocDAL.cs" />
     <Compile Include="UserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
