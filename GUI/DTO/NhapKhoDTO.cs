@@ -13,18 +13,20 @@ namespace DTO
         public string IDKho {  get; set; }
         public string IDNhanVien {  get; set; }
         public string GhiChu {  get; set; }
-        public float GiaTriDonHang {  get; set; }
+        public float TongTien {  get; set; }
+        public string TrangThai { get; set; }
 
         public NhapKhoDTO() { }
 
-        public NhapKhoDTO(string idPhieuNhap, DateTime ngayNhap, string idKho, string idNhanVien, string ghiChu, float giaTriDonHang)
+        public NhapKhoDTO(string idPhieuNhap, DateTime ngayNhap, string idKho, string idNhanVien, string ghiChu, float tongTien, string trangThai)
         {
             this.IDPhieuNhap = idPhieuNhap;
             this.NgayNhap = ngayNhap;
             this.IDKho = idKho;
             this.IDNhanVien = idNhanVien;
             this.GhiChu = ghiChu;
-            this.GiaTriDonHang = giaTriDonHang; //test
+            this.TongTien = tongTien;
+            this.TrangThai = trangThai;
         }
 
     }

@@ -44,6 +44,7 @@
     <Compile Include="KhoBLL.cs" />
     <Compile Include="NhaCungCapBLL.cs" />
     <Compile Include="NhapKhoBLL.cs" />
+    <Compile Include="ThuocBLL.cs" />
     <Compile Include="UserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
