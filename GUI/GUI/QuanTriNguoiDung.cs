@@ -167,7 +167,8 @@ namespace GUI
         {
             if (string.IsNullOrWhiteSpace(txt_MaNV.Text))
             {
-                MessageBox.Show("Hãy chọn một user để cấp lại mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Hãy chọn một user để cấp lại mật khẩu.", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 return;
             }
 
@@ -177,5 +178,6 @@ namespace GUI
             CapLaiMatKhau capLaiMatKhauForm = new CapLaiMatKhau(maNV, tenTK, _username, _password);
             capLaiMatKhauForm.ShowDialog();
         }
+
     }
-}
+    }
