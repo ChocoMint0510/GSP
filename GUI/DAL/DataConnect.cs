@@ -11,7 +11,7 @@ namespace DAL
 
         public DataConnect(string username, string password)
         {
-            string strConn = $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={username};Password={password}";
+            string strConn = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={username};Password={password}";
             conn = new SqlConnection(strConn);
         }
 
@@ -120,9 +120,10 @@ namespace DAL
                 CloseConnection();
             }
         }
-
-        public DataSet ExecuteStoredProcedureWithDataSet(string storedProcedure, SqlParameter[] parameters = null)
+        public DataTable ExecuteStoredProcedureWithDataTable(string storedProcedure, SqlParameter[] parameters = null)
         {
+            DataTable dataTable = new DataTable();
+
             try
             {
                 OpenConnection();
@@ -136,10 +137,44 @@ namespace DAL
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
-                        DataSet dataSet = new DataSet();
-                        adapter.Fill(dataSet);
-                        return dataSet;
+                        adapter.Fill(dataTable);
                     }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error executing stored procedure: " + ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+
+            return dataTable;
+        }
+        public int ExecuteStoredProcedureWithReturnValue(string storedProcedure, SqlParameter[] parameters = null)
+        {
+            try
+            {
+                OpenConnection();
+                using (SqlCommand cmd = new SqlCommand(storedProcedure, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+
+                    // Thêm tham số ReturnValue
+                    SqlParameter returnValue = new SqlParameter("@ReturnValue", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.ReturnValue
+                    };
+                    cmd.Parameters.Add(returnValue);
+
+                    cmd.ExecuteNonQuery();
+                    return (int)returnValue.Value;
                 }
             }
             catch (Exception ex)

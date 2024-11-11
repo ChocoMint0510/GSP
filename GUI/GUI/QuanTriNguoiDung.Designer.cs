@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_ChucVu = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_CapLaiMatKhau = new System.Windows.Forms.Button();
-            this.btn_CapNhatND = new System.Windows.Forms.Button();
             this.btn_XoaND = new System.Windows.Forms.Button();
-            this.btn_ThemND = new System.Windows.Forms.Button();
             this.txt_UserName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -94,9 +92,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_CapLaiMatKhau);
-            this.groupBox1.Controls.Add(this.btn_CapNhatND);
             this.groupBox1.Controls.Add(this.btn_XoaND);
-            this.groupBox1.Controls.Add(this.btn_ThemND);
             this.groupBox1.Location = new System.Drawing.Point(628, 2);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -109,31 +105,19 @@
             // btn_CapLaiMatKhau
             // 
             this.btn_CapLaiMatKhau.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CapLaiMatKhau.Location = new System.Drawing.Point(212, 149);
+            this.btn_CapLaiMatKhau.Location = new System.Drawing.Point(66, 108);
             this.btn_CapLaiMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_CapLaiMatKhau.Name = "btn_CapLaiMatKhau";
-            this.btn_CapLaiMatKhau.Size = new System.Drawing.Size(102, 65);
+            this.btn_CapLaiMatKhau.Size = new System.Drawing.Size(102, 63);
             this.btn_CapLaiMatKhau.TabIndex = 5;
             this.btn_CapLaiMatKhau.Text = "Cấp Lại Mật Khẩu";
             this.btn_CapLaiMatKhau.UseVisualStyleBackColor = true;
             this.btn_CapLaiMatKhau.Click += new System.EventHandler(this.btn_CapLaiMatKhau_Click);
             // 
-            // btn_CapNhatND
-            // 
-            this.btn_CapNhatND.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CapNhatND.Location = new System.Drawing.Point(44, 149);
-            this.btn_CapNhatND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_CapNhatND.Name = "btn_CapNhatND";
-            this.btn_CapNhatND.Size = new System.Drawing.Size(102, 65);
-            this.btn_CapNhatND.TabIndex = 2;
-            this.btn_CapNhatND.Text = "Cập nhật thông tin";
-            this.btn_CapNhatND.UseVisualStyleBackColor = true;
-            this.btn_CapNhatND.Click += new System.EventHandler(this.btn_CapNhatND_Click);
-            // 
             // btn_XoaND
             // 
             this.btn_XoaND.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XoaND.Location = new System.Drawing.Point(212, 44);
+            this.btn_XoaND.Location = new System.Drawing.Point(217, 108);
             this.btn_XoaND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_XoaND.Name = "btn_XoaND";
             this.btn_XoaND.Size = new System.Drawing.Size(102, 63);
@@ -141,18 +125,6 @@
             this.btn_XoaND.Text = "Xoá Người Dùng";
             this.btn_XoaND.UseVisualStyleBackColor = true;
             this.btn_XoaND.Click += new System.EventHandler(this.btn_XoaND_Click);
-            // 
-            // btn_ThemND
-            // 
-            this.btn_ThemND.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemND.Location = new System.Drawing.Point(44, 43);
-            this.btn_ThemND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_ThemND.Name = "btn_ThemND";
-            this.btn_ThemND.Size = new System.Drawing.Size(102, 63);
-            this.btn_ThemND.TabIndex = 0;
-            this.btn_ThemND.Text = "Thêm người dùng";
-            this.btn_ThemND.UseVisualStyleBackColor = true;
-            this.btn_ThemND.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_UserName
             // 
@@ -225,14 +197,14 @@
             this.dgv_DanhSach.AllowUserToDeleteRows = false;
             this.dgv_DanhSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_DanhSach.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_DanhSach.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_DanhSach.Location = new System.Drawing.Point(11, 319);
             this.dgv_DanhSach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_DanhSach.Name = "dgv_DanhSach";
@@ -290,9 +262,7 @@
         private System.Windows.Forms.TextBox txt_UserName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_CapNhatND;
         private System.Windows.Forms.Button btn_XoaND;
-        private System.Windows.Forms.Button btn_ThemND;
         private System.Windows.Forms.Button btn_CapLaiMatKhau;
         private System.Windows.Forms.TextBox txt_ChucVu;
     }
