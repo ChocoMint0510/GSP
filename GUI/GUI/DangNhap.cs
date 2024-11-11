@@ -32,25 +32,27 @@ namespace GUI
         {
             string username = txtTaiKhoan.Text;
             string password = txtMatKhau.Text;
+            
 
-            // Kiểm tra nếu người dùng nhập đầy đủ thông tin
+            
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Khởi tạo UserBLL với thông tin đăng nhập từ form
+            
             UserBLL userBLL = new UserBLL(username, password);
 
-            // Kiểm tra đăng nhập
+            
             if (userBLL.Login())
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Truyền username và password sang form QuanTriNguoiDung
+
                 //QuanTriNguoiDung mainForm = new QuanTriNguoiDung(username, password);
-                NhapKho mainForm = new NhapKho(username, password);
+                //NhapKho mainForm = new NhapKho(username, password);
+                QuanLyViTri mainForm = new QuanLyViTri(username,password);
                 mainForm.Show();
                 this.Hide();
             }

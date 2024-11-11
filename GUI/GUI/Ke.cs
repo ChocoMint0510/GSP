@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ChiTietXuatKho : Form
+    public partial class Ke : Form
     {
-        public ChiTietXuatKho()
+        public Ke()
         {
             InitializeComponent();
+        }
+
+        private void btn_Thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
