@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -27,8 +28,7 @@ namespace BLL
             string trangThai,
             List<ChiTietNhapKhoDTO> chiTietPhieuNhap)
         {
-            try
-            {
+  
                 return nhapKhoDAL.ThemPhieuNhapVaChiTiet(
                     ngayNhap,
                     idKho,
@@ -37,12 +37,31 @@ namespace BLL
                     ghiChu,
                     trangThai,
                     chiTietPhieuNhap
-                );
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Lỗi trong BLL khi thêm Phiếu Nhập: " + ex.Message);
-            }
+                );     
+        }
+
+        // 1. Lấy danh sách phiếu nhập
+        public DataTable HienThiPhieuNhap()
+        {
+            return nhapKhoDAL.HienThiPhieuNhap();
+        }
+
+
+        // 2. Lấy chi tiết phiếu nhập theo IDPhieuNhap
+        public DataTable LayChiTietPhieuNhap(string idPhieuNhap)
+        {
+           
+                return nhapKhoDAL.LayChiTietPhieuNhap(idPhieuNhap);
+            
+        }
+
+
+
+        public DataSet LayThongTinPhieuNhapTheoID(string idPhieuNhap)
+        {
+          
+                return nhapKhoDAL.LayThongTinPhieuNhapTheoID(idPhieuNhap);
+            
         }
     }
 }

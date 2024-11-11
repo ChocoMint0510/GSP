@@ -120,5 +120,37 @@ namespace DAL
                 CloseConnection();
             }
         }
+
+        public DataSet ExecuteStoredProcedureWithDataSet(string storedProcedure, SqlParameter[] parameters = null)
+        {
+            try
+            {
+                OpenConnection();
+                using (SqlCommand cmd = new SqlCommand(storedProcedure, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        DataSet dataSet = new DataSet();
+                        adapter.Fill(dataSet);
+                        return dataSet;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error executing stored procedure: " + ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
     }
 }
