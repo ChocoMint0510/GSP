@@ -26,15 +26,45 @@ namespace DAL
             if (result.Rows.Count > 0)
             {
                 DataRow row = result.Rows[0];
+                byte[] anh = row["Anh"] != DBNull.Value ? (byte[])row["Anh"] : null; // Lấy dữ liệu ảnh nếu có, ngược lại để null
+
                 return new UserDTO(
                     row["IDNhanVien"].ToString(),
                     row["TenNhanVien"].ToString(),
                     row["IDChucVu"].ToString(),
-                    row["Username"].ToString()
+                    Convert.ToDateTime(row["NgaySinh"]),
+                    row["DiaChi"].ToString(),
+                    row["Email"].ToString(),
+                    row["SoDienThoai"].ToString(),
+                    row["TrinhDo"].ToString(),
+                    anh // Truyền dữ liệu ảnh vào constructor
                 );
             }
             return null;
         }
+        public DataTable GetAllNhanVienWithChucVu()
+        {
+            return dataConnect.ExecuteStoredProcedureWithDataTable("sp_GetAllNhanVienWithChucVu");
+        }
+
+
+        public string GenerateNewMaNhanVien()
+        {
+            string query = "SELECT MAX(IDNhanVien) AS LastID FROM NhanVien";
+            DataTable result = dataConnect.GetData(query);
+
+            if (result.Rows.Count > 0 && result.Rows[0]["LastID"] != DBNull.Value)
+            {
+                string lastID = result.Rows[0]["LastID"].ToString();
+                int newIDNum = int.Parse(lastID.Substring(2)) + 1;
+                return "NV" + newIDNum.ToString("D4"); // Tạo mã NVxxxx tự động
+            }
+            else
+            {
+                return "NV0001"; // Mã đầu tiên nếu chưa có nhân viên nào
+            }
+        }
+
         public DataTable GetChucVuList()
         {
             string query = "SELECT IDChucVu, TenChucVu FROM ChucVu";
@@ -47,9 +77,15 @@ namespace DAL
             SqlParameter[] parameters = {
                 new SqlParameter("@TenNhanVien", user.TenNhanVien),
                 new SqlParameter("@IDChucVu", user.ChucVuID),
-                new SqlParameter("@Username", user.Username),
-                new SqlParameter("@Password", password)
+                new SqlParameter("@Password", password),
+                new SqlParameter("@NgaySinh", user.NgaySinh),
+                new SqlParameter("@DiaChi", user.DiaChi),
+                new SqlParameter("@Email", user.Email),
+                new SqlParameter("@SoDienThoai", user.SoDienThoai),
+                new SqlParameter("@TrinhDo", user.TrinhDo),
+                new SqlParameter("@Anh", SqlDbType.VarBinary) { Value = (object)user.Anh ?? DBNull.Value } // Lưu ảnh đại diện
             };
+
             return dataConnect.ExecuteStoredProcedure("sp_AddNhanVien", parameters);
         }
         public DataTable GetAllUsers()
@@ -79,7 +115,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi khi xóa nhân viên: " + ex.Message);
+                Console.WriteLine($"Lỗi khi xóa nhân viên (Mã NV: {maNhanVien}, Username: {username}): {ex.Message}");
                 return false;
             }
         }
@@ -160,6 +196,27 @@ namespace DAL
 
             return tenNVList;
         }
+        //Cập Nhật Nhân Viên
+        public bool UpdateNhanVien(UserDTO user)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@IDNhanVien", user.MaNhanVienID),
+                new SqlParameter("@TenNhanVien", user.TenNhanVien),
+                new SqlParameter("@IDChucVu", user.ChucVuID),
+                new SqlParameter("@NgaySinh", user.NgaySinh),
+                new SqlParameter("@DiaChi", user.DiaChi),
+                new SqlParameter("@Email", user.Email),
+                new SqlParameter("@SoDienThoai", user.SoDienThoai),
+                new SqlParameter("@TrinhDo", user.TrinhDo),
+                new SqlParameter("@Anh", user.Anh)
+            };
+
+            int result = dataConnect.ExecuteStoredProcedureWithReturnValue("sp_UpdateNhanVien", parameters);
+            return result >= 0; // Trả về true nếu cập nhật thành công
+        }
+
+
 
     }
 }

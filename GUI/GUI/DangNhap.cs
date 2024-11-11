@@ -50,7 +50,7 @@ namespace GUI
 
                 // Truyền username và password sang form QuanTriNguoiDung
                 //QuanTriNguoiDung mainForm = new QuanTriNguoiDung(username, password);
-                NhapKho mainForm = new NhapKho(username, password);
+                QuanLyNhanVien mainForm = new QuanLyNhanVien(username, password);
                 mainForm.Show();
                 this.Hide();
             }
