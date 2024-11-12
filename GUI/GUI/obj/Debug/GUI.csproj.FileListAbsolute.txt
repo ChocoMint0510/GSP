@@ -1,0 +1,200 @@
+C:\GSP\GUI\GUI\bin\Debug\GUI.exe.config
+C:\GSP\GUI\GUI\bin\Debug\GUI.exe
+C:\GSP\GUI\GUI\bin\Debug\GUI.pdb
+C:\GSP\GUI\GUI\bin\Debug\BLL.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Data.Desktop.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Data.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Drawing.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Printing.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraBars.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraEditors.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DAL.dll
+C:\GSP\GUI\GUI\bin\Debug\DTO.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Sparkline.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\BLL.pdb
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Data.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Drawing.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraBars.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DAL.pdb
+C:\GSP\GUI\GUI\bin\Debug\DTO.pdb
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\GSP\GUI\GUI\obj\Debug\GUI.CapLaiMatKhau.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.CapNhat.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.DangNhap.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.DanhMucThuoc.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.DoiMatKhau.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.KiemKeDoiChieu.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Main.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.NhapKho.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Quanlynguyenlieu.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Quanlythuoc.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.QuanTriNguoiDung.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.SaoLuuPhucHoi.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.ThemNguoiDung.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Theodoitonkho.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.ThongkeBaocao.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.XuatKho.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\GSP\GUI\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\GSP\GUI\GUI\obj\Debug\GUI.exe
+C:\GSP\GUI\GUI\obj\Debug\GUI.pdb
+C:\GSP\GUI\GUI\obj\Debug\GUI.Kho.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.exe.licenses
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraGrid.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraLayout.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraPrinting.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Images.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Office.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Office.v24.1.Core.xml
+C:\GSP\GUI\GUI\obj\Debug\GUI.Khu.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.Ke.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.O.resources
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraNavBar.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraNavBar.v24.1.xml
+C:\GSP\GUI\GUI\obj\Debug\GUI.QuanLyViTri.resources
+C:\GSP\GUI\GUI\obj\Debug\GUI.SapXepThuoc.resources
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Charts.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.UI.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.UI.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraRichEdit.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.DataAccess.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.DataVisualization.v24.1.Core.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Xpo.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.CodeParser.v24.1.dll
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Charts.v24.1.Core.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.UI.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.UI.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraRichEdit.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.DataAccess.v24.1.xml
+C:\GSP\GUI\GUI\bin\Debug\DevExpress.Xpo.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\GUI.exe.config
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\GUI.exe
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\GUI.pdb
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\BLL.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DAL.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Charts.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Data.Desktop.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Data.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Drawing.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Images.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Printing.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.UI.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraBars.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.UI.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraEditors.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraGrid.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraLayout.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraNavBar.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraPrinting.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DTO.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraRichEdit.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.DataAccess.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.DataVisualization.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Sparkline.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Office.v24.1.Core.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Xpo.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.CodeParser.v24.1.dll
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\BLL.pdb
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DAL.pdb
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DTO.pdb
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Charts.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Data.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Drawing.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Utils.v24.1.UI.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraBars.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.UI.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraNavBar.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraRichEdit.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.DataAccess.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Office.v24.1.Core.xml
+E:\New folder (2)\GSP\GUI\GUI\bin\Debug\DevExpress.Xpo.v24.1.xml
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.CapLaiMatKhau.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.CapNhat.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.DangNhap.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.DanhMucThuoc.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.DoiMatKhau.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Ke.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Kho.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Khu.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.KiemKeDoiChieu.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Main.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.NhapKho.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.O.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Quanlynguyenlieu.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Quanlythuoc.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.QuanLyViTri.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.QuanTriNguoiDung.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.SaoLuuPhucHoi.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.SapXepThuoc.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.ThemNguoiDung.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.Theodoitonkho.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.ThongkeBaocao.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.XuatKho.resources
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.exe.licenses
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.csproj.Up2Date
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.exe
+E:\New folder (2)\GSP\GUI\GUI\obj\Debug\GUI.pdb

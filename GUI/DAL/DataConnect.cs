@@ -11,7 +11,7 @@ namespace DAL
 
         public DataConnect(string username, string password)
         {
-            string strConn = $"Data Source=LAPTOP-NITRO5;Initial Catalog=QuanLyGSP;User ID={username};Password={password}";
+            string strConn = $"Data Source=NARIZMUSIC\\CHOCOPRO;Initial Catalog=QuanLyGSP;User ID={username};Password={password}";
             conn = new SqlConnection(strConn);
         }
 

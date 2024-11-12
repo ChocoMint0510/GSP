@@ -584,13 +584,13 @@ namespace GUI
                 // Chỉ hiển thị các cột cần thiết
                 dgv_PhieuNhap.Columns["IDPhieuNhap"].Visible = true;
                 dgv_PhieuNhap.Columns["NgayNhap"].Visible = true;
-                dgv_PhieuNhap.Columns["TongTien"].Visible = true;
+                //dgv_PhieuNhap.Columns["TongTien"].Visible = true;
                 dgv_PhieuNhap.Columns["TrangThai"].Visible = true;
 
                 // Đặt tiêu đề cho các cột (nếu cần)
                 dgv_PhieuNhap.Columns["IDPhieuNhap"].HeaderText = "Mã Phiếu Nhập";
                 dgv_PhieuNhap.Columns["NgayNhap"].HeaderText = "Ngày Nhập";
-                dgv_PhieuNhap.Columns["TongTien"].HeaderText = "Tổng Tiền";
+                //dgv_PhieuNhap.Columns["TongTien"].HeaderText = "Tổng Tiền";
                 dgv_PhieuNhap.Columns["TrangThai"].HeaderText = "Trạng Thái";
             }
             catch (Exception ex)

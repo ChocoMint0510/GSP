@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeBLL.cs" />
     <Compile Include="KhoBLL.cs" />
     <Compile Include="KhuBLL.cs" />
+    <Compile Include="LuuTruBLL.cs" />
     <Compile Include="NhaCungCapBLL.cs" />
     <Compile Include="NhapKhoBLL.cs" />
     <Compile Include="ThuocBLL.cs" />

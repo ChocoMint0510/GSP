@@ -22,12 +22,12 @@ namespace DAL
 
 
         public string ThemPhieuNhapVaChiTiet(
-        DateTime ngayNhap,
-        string idKho,
-        string idNhaCC,
-        string idNhanVien,
-        string ghiChu,
-        string trangThai,
+    DateTime ngayNhap,
+    string idKho,
+    string idNhaCC,
+    string idNhanVien,
+    string ghiChu,
+    string trangThai,
     List<ChiTietNhapKhoDTO> chiTietPhieuNhap)
         {
             try
@@ -69,7 +69,7 @@ namespace DAL
                 {
                     ParameterName = "@ChiTietPhieuNhap",
                     SqlDbType = SqlDbType.Structured,
-                    TypeName = "ChiTietPhieuNhapType", // Tên của User-Defined Table Type trong SQL Server
+                    TypeName = "ChiTietPhieuNhapType",
                     Value = chiTietTable
                 };
                 parameters.Add(chiTietParam);
@@ -78,22 +78,16 @@ namespace DAL
                 string storedProcedure = "sp_ThemPhieuNhapVaChiTiet";
                 dataConnect.ExecuteStoredProcedure(storedProcedure, parameters.ToArray());
 
-                // Kiểm tra kết quả từ tham số OUTPUT
-                string generatedID = outputParam.Value.ToString();
-                if (!string.IsNullOrEmpty(generatedID))
-                {
-                    return generatedID;
-                }
-                else
-                {
-                    throw new Exception("Không thể thêm Phiếu Nhập.");
-                }
+                // Trả về ID phiếu nhập từ tham số OUTPUT
+                return outputParam.Value.ToString();
             }
             catch (Exception ex)
             {
                 throw new Exception("Lỗi khi thêm Phiếu Nhập: " + ex.Message);
             }
         }
+
+
 
 
         public DataSet LayThongTinPhieuNhapTheoID(string idPhieuNhap)

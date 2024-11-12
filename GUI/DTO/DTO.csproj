@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietNhapKhoDTO.cs" />
+    <Compile Include="KeDTO.cs" />
     <Compile Include="KhoDTO.cs" />
     <Compile Include="KhuDTO.cs" />
+    <Compile Include="LuuTruDTO.cs" />
     <Compile Include="NhaCungCapDTO.cs" />
     <Compile Include="NhapKhoDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -31,3 +31,14 @@ E:\PUSH\GSP\GUI\BLL\obj\Debug\BLL.pdb
 C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
 C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\GSP\GUI\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\BLL.dll
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\BLL.pdb
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\DAL.dll
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\DTO.dll
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\DAL.pdb
+E:\New folder (2)\GSP\GUI\BLL\bin\Debug\DTO.pdb
+E:\New folder (2)\GSP\GUI\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\New folder (2)\GSP\GUI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\New folder (2)\GSP\GUI\BLL\obj\Debug\BLL.csproj.Up2Date
+E:\New folder (2)\GSP\GUI\BLL\obj\Debug\BLL.dll
+E:\New folder (2)\GSP\GUI\BLL\obj\Debug\BLL.pdb
